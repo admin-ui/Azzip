@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Azzip admin basic</title>
+<link href="assets/css/common.css?ver=1.01" type="text/css" rel="stylesheet" />
+<link href="assets/css/font.css?ver=1.01" type="text/css" rel="stylesheet" />
+<link href="assets/css/frame.css?ver=1.01" type="text/css" rel="stylesheet" />
+<!--[if lt IE 8]>
+<script type="text/javascript" src="assets/js/font.js"></script>
+<script defer type="text/javascript" src="assets/js/pngfix.js"></script>
+<![endif]-->
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/jquery/calendar.js"></script>
+<script type="text/javascript" src="assets/js/jquery/tools.js"></script>
+<script type="text/javascript" src="assets/js/frame.js"></script>
+</head>
+<body>
+
+
+<div id="pz-header" class="pz-header pz-fix-top">
+    <h1>Azzip UI - 基础css</h1>
+    <a href="#cssBox" rel="section-toggle" class="pz-btn">包围</a>
+    <a href="#cssBlock" rel="section-toggle" class="pz-btn">区块</a>
+    <a href="#cssTypesetting" rel="section-toggle" class="pz-btn">排版</a>
+    <a href="#cssTable" rel="section-toggle" class="pz-btn">表格</a>
+    <a href="#cssPager" rel="section-toggle" class="pz-btn">翻页类</a>
+    <a href="#cssForm" rel="section-toggle" class="pz-btn">表单</a>
+    <a href="#cssButton" rel="section-toggle" class="pz-btn">按钮</a>
+    <a href="#cssIcon" rel="section-toggle" class="pz-btn">图标</a>
+</div>
+<div id="pz-shader" class="pz-shader pz-fix-top"></div>
+<div class="pz-header-fix-space"></div>
+<!-- 
+不浮动的header:
+    去掉 pz-shader 和 pz-header-fix-space
+    pz-header class 去掉 "pz-fix-top"
+ -->
+
+<div class="pz-wrapper">
+
+
+<div class="pz-heading" id="cssBox">
+    <h2>包围
+        <small>pz-box, pz-box-header, pz-box-content</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <code>pz-box</code>带边框和白色背景的包围<br />
+                <p>Demo code (右侧是显示效果):</p>
+                <pre>
+&lt;div class="pz-box">
+    &lt;div class="pz-box-header">
+        这是box的标题 &lt;span>附属说明&lt;/span>
+    &lt;/div>
+    &lt;div class="pz-box-content">
+        box内容
+    &lt;/div>
+&lt;/div></pre>
+            </div>
+        </div>
+    </div>
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-header">
+                这是box的标题 <span>附属说明</span>
+            </div>
+            <div class="pz-box-content">
+                box内容
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pz-heading" id="cssBlock">
+    <h2>区块
+        <small>pz-block, pz-block-header, pz-block-content</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <code>pz-block</code>仅划分一个包围区域，没有边框和背景<br />
+                <p>Demo code (右侧是显示效果):</p>
+                <pre>
+&lt;div class="pz-block">
+    &lt;div class="pz-block-header">
+        这是block的标题 &lt;span>附属说明&lt;/span>
+    &lt;/div>
+    &lt;div class="pz-block-content">
+        block内容
+    &lt;/div>
+&lt;/div></pre>
+            </div>
+        </div>
+    </div>
+    <div class="pz-fluid-dual">
+        <div class="pz-block">
+            <div class="pz-block-header">
+                这是block的标题 <span>附属说明</span>
+            </div>
+            <div class="pz-block-content">
+                block内容
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pz-heading" id="cssTypesetting">
+    <h2>排版
+        <small>h1 ~ h6, p, strong</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-header">
+                内容展示
+            </div>
+            <div class="pz-box-content">
+                <h3>h3 大标题 Lorem ipsum</h3>
+                <p>4月27日消息，在近期推出的Android旗舰机型中，HTC One无疑是一款引人注目的设备，有人钟意于它精良的设计，<strong>也有人怀疑所谓Ultrapixel技术实际的拍摄性能</strong>。日前，科技网站Pocket- lint就对HTC One在实际使用中的拍摄性能进行了测试。</p>
+                <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+        </div>
+    </div>
+    <div class="pz-fluid-dual">
+        <h1>h1 这是标题，Lorem <small>small 小字ipsum</small></h1>
+        <h2>h2 这是标题，Lorem <small>small 小字ipsum</small></h2>
+        <h3>h3 这是标题，Lorem <small>small 小字ipsum</small></h3>
+        <h4>h4 这是标题，Lorem <small>small 小字ipsum</small></h4>
+        <h5>h5 这是标题，Lorem <small>small 小字ipsum</small></h5>
+        <h6>h6 这是标题，Lorem <small>small 小字ipsum</small></h6>
+    </div>
+</div>
+
+
+<div class="pz-heading" id="cssTable">
+    <h2>表格
+        <small>pz-table</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-header">
+                Table的标题 <span>附属说明</span>
+            </div>
+            <table class="pz-table" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <th>#</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>年龄</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>李雷</td>
+                    <td>男</td>
+                    <td>14</td>
+                    <td>
+                        <div class="pz-btn-group">
+                            <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                            <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>韩梅梅</td>
+                    <td>女</td>
+                    <td>13</td>
+                    <td>
+                        <div class="pz-btn-group">
+                            <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                            <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Jim</td>
+                    <td>男</td>
+                    <td>14</td>
+                    <td>
+                        <div class="pz-btn-group">
+                            <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                            <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Lucy</td>
+                    <td>女</td>
+                    <td>13</td>
+                    <td>
+                        <div class="pz-btn-group">
+                            <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                            <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Lily</td>
+                    <td>女</td>
+                    <td>13</td>
+                    <td>
+                        <div class="pz-btn-group">
+                            <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                            <a href="javascript:;" class="pz-btn pz-btn-danger" title="删除"><i class="icon-remove"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>林涛</td>
+                    <td>男</td>
+                    <td>13</td>
+                    <td>
+                        <div class="pz-btn-group">
+                            <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                            <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Uncle Wang</td>
+                    <td>男</td>
+                    <td>40</td>
+                    <td>
+                        <div class="pz-btn-group">
+                            <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                            <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>高慧</td>
+                    <td>女</td>
+                    <td>26</td>
+                    <td>
+                        <div class="pz-btn-group">
+                            <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                            <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Polly</td>
+                    <td>n/a</td>
+                    <td>1</td>
+                    <td>
+                        <div class="pz-btn-group">
+                            <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                            <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Lady GaGa</td>
+                    <td>?</td>
+                    <td>?</td>
+                    <td>
+                        <div class="pz-btn-group">
+                            <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                            <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content" style="height:360px; width:95%; overflow:auto;">
+                <pre>
+&lt;div class="pz-box">
+    &lt;div class="pz-box-header">
+        Table的标题 &lt;span>附属说明&lt;/span>
+    &lt;/div>
+    &lt;table class="pz-table" border="0" cellspacing="0" cellpadding="0">
+        &lt;tr>
+            &lt;th>#&lt;/th>
+            &lt;th>姓名&lt;/th>
+            &lt;th>性别&lt;/th>
+            &lt;th>年龄&lt;/th>
+            &lt;th>操作&lt;/th>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>1&lt;/td>
+            &lt;td>李雷&lt;/td>
+            &lt;td>男&lt;/td>
+            &lt;td>14&lt;/td>
+            &lt;td>
+                &lt;div class="pz-btn-group">
+                    &lt;a href="javascript:;" class="pz-btn" title="查看">&lt;i class="icon-search">&lt;/i>&lt;/a>
+                    &lt;a href="javascript:;" class="pz-btn" title="删除">&lt;i class="icon-remove">&lt;/i>&lt;/a>
+                &lt;/div>
+            &lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>2&lt;/td>
+            &lt;td>韩梅梅&lt;/td>
+            &lt;td>女&lt;/td>
+            &lt;td>13&lt;/td>
+            &lt;td>
+                &lt;div class="pz-btn-group">
+                    &lt;a href="javascript:;" class="pz-btn" title="查看">&lt;i class="icon-search">&lt;/i>&lt;/a>
+                    &lt;a href="javascript:;" class="pz-btn" title="删除">&lt;i class="icon-remove">&lt;/i>&lt;/a>
+                &lt;/div>
+            &lt;/td>
+        &lt;/tr>
+        ......
+    &lt;/table>
+&lt;/div></pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pz-heading">
+    <h3>带边框线的表格
+        <small>pz-table pz-border-table</small>
+    </h3>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-header">
+                Table的标题 <span>附属说明</span>
+            </div>
+            <table class="pz-table pz-border-table" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <th>#</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>年龄</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>李雷</td>
+                    <td>男</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>韩梅梅</td>
+                    <td>女</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Jim</td>
+                    <td>男</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Lucy</td>
+                    <td>女</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Lily</td>
+                    <td>女</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>林涛</td>
+                    <td>男</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Uncle Wang</td>
+                    <td>男</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>高慧</td>
+                    <td>女</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Polly</td>
+                    <td>n/a</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Lady GaGa</td>
+                    <td>?</td>
+                    <td>?</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content" style="height:360px; width:95%; overflow:auto;">
+                <pre>
+&lt;div class="pz-box">
+    &lt;div class="pz-box-header">
+        Table的标题 &lt;span>附属说明&lt;/span>
+    &lt;/div>
+    &lt;table class="pz-table pz-border-table" border="0" cellspacing="0" cellpadding="0">
+        &lt;tr>
+            &lt;th>#&lt;/th>
+            &lt;th>姓名&lt;/th>
+            &lt;th>性别&lt;/th>
+            &lt;th>年龄&lt;/th>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>1&lt;/td>
+            &lt;td>李雷&lt;/td>
+            &lt;td>男&lt;/td>
+            &lt;td>14&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>2&lt;/td>
+            &lt;td>韩梅梅&lt;/td>
+            &lt;td>女&lt;/td>
+            &lt;td>13&lt;/td>
+        &lt;/tr>
+        ......
+    &lt;/table>
+&lt;/div></pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pz-heading">
+    <h3>紧凑的表格
+        <small>pz-table pz-compact-table</small>
+    </h3>
+</div>
+
+
+<div class="pz-box">
+    <div class="pz-box-header">
+        Table的标题 <span>附属说明</span>
+    </div>
+    <table class="pz-table pz-compact-table" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <th>#</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>李雷</td>
+            <td>男</td>
+            <td>14</td>
+            <td>
+                <div class="pz-btn-group">
+                    <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                    <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>韩梅梅</td>
+            <td>女</td>
+            <td>13</td>
+            <td>
+                <div class="pz-btn-group">
+                    <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                    <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Jim</td>
+            <td>男</td>
+            <td>14</td>
+            <td>
+                <div class="pz-btn-group">
+                    <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                    <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Lucy</td>
+            <td>女</td>
+            <td>13</td>
+            <td>
+                <div class="pz-btn-group">
+                    <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                    <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Lily</td>
+            <td>女</td>
+            <td>13</td>
+            <td>
+                <div class="pz-btn-group">
+                    <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                    <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>林涛</td>
+            <td>男</td>
+            <td>13</td>
+            <td>
+                <div class="pz-btn-group">
+                    <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                    <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Uncle Wang</td>
+            <td>男</td>
+            <td>40</td>
+            <td>
+                <div class="pz-btn-group">
+                    <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                    <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>高慧</td>
+            <td>女</td>
+            <td>26</td>
+            <td>
+                <div class="pz-btn-group">
+                    <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                    <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Polly</td>
+            <td>n/a</td>
+            <td>1</td>
+            <td>
+                <div class="pz-btn-group">
+                    <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                    <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Lady GaGa</td>
+            <td>?</td>
+            <td>?</td>
+            <td>
+                <div class="pz-btn-group">
+                    <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                    <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="pz-heading" id="cssPager">
+    <h2>翻页类
+        <small>pz-pagination, pz-pager</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-header">
+                Table的标题 <span>附属说明</span>
+            </div>
+            <div class="pz-box-content clearfix">
+                <div class="pz-pagination"><a href="javascript:;">首页</a><a href="javascript:;">1</a><a href="javascript:;">2</a><span>3</span><a href="javascript:;">4</a><a href="javascript:;">5</a><a href="javascript:;">末页</a></div>
+                <div class="pz-pagination pz-right"><a href="javascript:;">右浮动</a><a href="javascript:;">1</a><a href="javascript:;">2</a><span>3</span><a href="javascript:;">4</a><a href="javascript:;">5</a><a href="javascript:;">末页</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                翻页类的 a 标签和 span 标签之间不能有<code>空格</code>或<code>换行符</code>，否则会出现很丑的缝隙！<br />
+                a 标签表示每页的链接， span 标签是当前页面（不可点击）
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pz-heading" id="cssForm">
+    <h2>表单
+        <small>pz-form</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-header">
+                Form的标题 <span>附属说明</span>
+            </div>
+            <div class="pz-form">
+                <div class="pz-form-row">
+                    <div class="pz-form-label">名字</div>
+                    <div class="pz-form-input">
+                        <input type="text" name="name" class="pz-form-text" />
+                        <span class="pz-form-hint">这是提示 pz-form-hint</span>
+                    </div>
+                </div>
+                <div class="pz-form-row">
+                    <div class="pz-form-label">Pwd</div>
+                    <div class="pz-form-input">
+                        <input type="password" name="pwd" class="pz-form-password" />
+                        <i class="pz-form-required icon-pencil" title="必填"></i>
+                        <span class="pz-form-hint">必填啊</span>
+                    </div>
+                </div>
+                <div class="pz-form-row">
+                    <div class="pz-form-label">状态Status</div>
+                    <div class="pz-form-input">
+                        <select name="status" id="status" class="pz-form-select">
+                            <option value="">请选择</option>
+                            <option value="1">开启</option>
+                            <option value="2">暂停</option>
+                            <option value="3">中指</option>
+                        </select>
+                        <i class="pz-form-required icon-pencil" title="必填"></i>
+                    </div>
+                </div>
+                <div class="pz-form-row">
+                    <div class="pz-form-label">申请理由</div>
+                    <div class="pz-form-input">
+                        <textarea name="reason" id="reason" class="pz-form-textarea"></textarea>
+                        <i class="pz-form-required icon-pencil" title="必填"></i>
+                        <span class="pz-form-hint">不少于800字</span>
+                    </div>
+                </div>
+                
+                <div class="pz-form-gap"></div>
+                
+                <div class="pz-form-row">
+                    <div class="pz-form-label">性别</div>
+                    <div class="pz-form-input">
+                        <input type="radio" name="sex" id="sex1" class="pz-form-radio" 
+                        /><label for="sex1">男</label>
+                        <input type="radio" name="sex" id="sex2" class="pz-form-radio" 
+                        /><label for="sex2">女</label>
+                        <input type="radio" name="sex" id="sex3" class="pz-form-radio" 
+                        /><label for="sex3">没丁丁</label>
+                    </div>
+                </div>
+                <div class="pz-form-row">
+                    <div class="pz-form-label">性取向</div>
+                    <div class="pz-form-input">
+                        <input type="checkbox" name="sexto" id="sexto1" class="pz-form-checkbox" 
+                        /><label for="sexto1">男</label>
+                        <input type="checkbox" name="sexto" id="sexto2" class="pz-form-checkbox" 
+                        /><label for="sexto2">女</label>
+                        <input type="checkbox" name="sexto" id="sexto3" class="pz-form-checkbox" 
+                        /><label for="sexto3">动物?!</label>
+                    </div>
+                </div>
+                <div class="pz-form-row">
+                    <div class="pz-form-label">上传照片</div>
+                    <div class="pz-form-input">
+                        <input type="file" name="upfile" id="upfile" class="pz-form-file" />
+                    </div>
+                </div>
+                
+                <div class="pz-form-gap"></div>
+                
+                <div class="pz-form-footer">
+                    <input type="button" value="取消" class="pz-btn" />
+                    <input type="submit" value="提交数据" class="pz-btn pz-btn-danger" />
+                    <input type="submit" value="先预览" class="pz-btn pz-btn-submit" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                使用<code>div class="pz-form"</code>做为外框包围你的表单<br />
+                每一行用<code>div class="pz-form-row"</code>包围<br />
+                每行标签使用<code>div class="pz-form-label"</code>包围<br />
+                表单输入内容使用<code>div class="pz-form-input"</code>包围<br />
+                表单提交按钮请包围到<code>div class="pz-form-footer"</code>容器内<br />
+                表单元素class: <code>pz-form-text</code>, <code>pz-form-password</code>, <code>pz-form-select</code>, 
+                <code>pz-form-radio</code>, <code>pz-form-checkbox</code>, <code>pz-form-textarea</code>, <code>pz-form-file</code><br />
+                表单提示: <code>&lt;span class="pz-form-hint">&lt;/span></code><br />
+                必填项: <code>&lt;i class="pz-form-required icon-pencil" title="必填">&lt;/i></code><br />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pz-heading" id="cssButton">
+    <h2>按钮
+        <small>pz-btn, pz-small-btn, pz-big-btn</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <a href="javascript:;" class="pz-btn">普通</a> pz-btn
+                <br /><br />
+                <a href="javascript:;" class="pz-btn pz-btn-submit">提交</a> pz-btn pz-btn-submit
+                <br /><br />
+                <a href="javascript:;" class="pz-btn pz-btn-danger">危险</a> pz-btn pz-btn-danger
+                <br /><br />
+                <a href="javascript:;" class="pz-btn pz-btn-reverse">反色</a> pz-btn pz-btn-reverse
+                <br /><br />
+                <a href="javascript:;" class="pz-btn pz-btn-warning">警告</a> pz-btn pz-btn-warning
+                <br /><br />
+                <a href="javascript:;" class="pz-btn pz-btn-success">成功!</a> pz-btn pz-btn-success
+                <br /><br />
+                <a href="javascript:;" class="pz-btn pz-btn-info">信息</a> pz-btn pz-btn-info
+                <br /><br />
+                <a href="javascript:;" class="pz-btn pz-btn-disabled">被禁用</a> pz-btn pz-btn-disabled
+                <br /><br />
+                <a href="javascript:;" class="pz-btn pz-btn-success"><i class="icon-ok-sign"></i> 带图标按钮</a> &lt; ...>&lt;i class="icon-ok-sign">&lt;/i> 文字&lt;/a>
+                <br /><br />
+                <a href="javascript:;" class="pz-btn pz-big-btn pz-btn-submit"><i class="icon-envelope big-icon"></i><br />大按钮</a> pz-btn pz-big-btn pz-btn-submit
+            </div>
+        </div>
+    </div>
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                input 和 a 标签都可以做成按钮样式，不建议使用 button 标签（老浏览器有兼容问题）<br /><br />
+                <code>大按钮</code>必须附带一个<code>大图标</code>，为按钮内部<code>&lt;i> 标签</code>增加一个<code>big-icon</code>class即可变出大图标
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pz-heading" id="cssIcon">
+    <h2>图标
+        <small>icon-xxx, big-icon</small>
+    </h2>
+</div>
+
+
+<div class="pz-box">
+    <div class="pz-box-content">
+        <code>&lt;i class="icon-glass">&lt;/i></code> 成生图标: <i class="icon-glass"></i><br />
+        图标支持多颜色多尺寸，只需设置style: font-color:#xxx, font-size:xxpx
+    </div>
+</div>
+
+
+<style type="text/css">
+.box1 {
+	font-size: 18px;
+	display: inline-block;
+	width: 28%;
+	padding: .25em .5em;
+	background: #eee;
+	margin: .5em .5em .5em 0;
+}
+</style>
+
+
+<div class="pz-heading">
+    <h3>图标一览</h3>
+</div>
+<div class="pz-box clearfix">
+    <div class="pz-box-content">
+        <span class="box1">
+        	<i class="icon-glass"></i>
+        	&nbsp;icon-glass
+        </span>
+        <span class="box1">
+        	<i class="icon-music"></i>
+        	&nbsp;icon-music
+        </span>
+        <span class="box1">
+        	<i class="icon-search"></i>
+        	&nbsp;icon-search
+        </span>
+        <span class="box1">
+        	<i class="icon-envelope"></i>
+        	&nbsp;icon-envelope
+        </span>
+        <span class="box1">
+        	<i class="icon-heart"></i>
+        	&nbsp;icon-heart
+        </span>
+        <span class="box1">
+        	<i class="icon-star"></i>
+        	&nbsp;icon-star
+        </span>
+        <span class="box1">
+        	<i class="icon-star-empty"></i>
+        	&nbsp;icon-star-empty
+        </span>
+        <span class="box1">
+        	<i class="icon-user"></i>
+        	&nbsp;icon-user
+        </span>
+        <span class="box1">
+        	<i class="icon-film"></i>
+        	&nbsp;icon-film
+        </span>
+        <span class="box1">
+        	<i class="icon-th-large"></i>
+        	&nbsp;icon-th-large
+        </span>
+        <span class="box1">
+        	<i class="icon-th"></i>
+        	&nbsp;icon-th
+        </span>
+        <span class="box1">
+        	<i class="icon-th-list"></i>
+        	&nbsp;icon-th-list
+        </span>
+        <span class="box1">
+        	<i class="icon-ok"></i>
+        	&nbsp;icon-ok
+        </span>
+        <span class="box1">
+        	<i class="icon-remove"></i>
+        	&nbsp;icon-remove
+        </span>
+        <span class="box1">
+        	<i class="icon-zoom-in"></i>
+        	&nbsp;icon-zoom-in
+        </span>
+        <span class="box1">
+        	<i class="icon-zoom-out"></i>
+        	&nbsp;icon-zoom-out
+        </span>
+        <span class="box1">
+        	<i class="icon-off"></i>
+        	&nbsp;icon-off
+        </span>
+        <span class="box1">
+        	<i class="icon-signal"></i>
+        	&nbsp;icon-signal
+        </span>
+        <span class="box1">
+        	<i class="icon-cog"></i>
+        	&nbsp;icon-cog
+        </span>
+        <span class="box1">
+        	<i class="icon-trash"></i>
+        	&nbsp;icon-trash
+        </span>
+        <span class="box1">
+        	<i class="icon-home"></i>
+        	&nbsp;icon-home
+        </span>
+        <span class="box1">
+        	<i class="icon-file"></i>
+        	&nbsp;icon-file
+        </span>
+        <span class="box1">
+        	<i class="icon-time"></i>
+        	&nbsp;icon-time
+        </span>
+        <span class="box1">
+        	<i class="icon-road"></i>
+        	&nbsp;icon-road
+        </span>
+        <span class="box1">
+        	<i class="icon-download-alt"></i>
+        	&nbsp;icon-download-alt
+        </span>
+        <span class="box1">
+        	<i class="icon-download"></i>
+        	&nbsp;icon-download
+        </span>
+        <span class="box1">
+        	<i class="icon-upload"></i>
+        	&nbsp;icon-upload
+        </span>
+        <span class="box1">
+        	<i class="icon-inbox"></i>
+        	&nbsp;icon-inbox
+        </span>
+        <span class="box1">
+        	<i class="icon-play-circle"></i>
+        	&nbsp;icon-play-circle
+        </span>
+        <span class="box1">
+        	<i class="icon-repeat"></i>
+        	&nbsp;icon-repeat
+        </span>
+        <span class="box1">
+        	<i class="icon-refresh"></i>
+        	&nbsp;icon-refresh
+        </span>
+        <span class="box1">
+        	<i class="icon-list-alt"></i>
+        	&nbsp;icon-list-alt
+        </span>
+        <span class="box1">
+        	<i class="icon-lock"></i>
+        	&nbsp;icon-lock
+        </span>
+        <span class="box1">
+        	<i class="icon-flag"></i>
+        	&nbsp;icon-flag
+        </span>
+        <span class="box1">
+        	<i class="icon-headphones"></i>
+        	&nbsp;icon-headphones
+        </span>
+        <span class="box1">
+        	<i class="icon-volume-off"></i>
+        	&nbsp;icon-volume-off
+        </span>
+        <span class="box1">
+        	<i class="icon-volume-down"></i>
+        	&nbsp;icon-volume-down
+        </span>
+        <span class="box1">
+        	<i class="icon-volume-up"></i>
+        	&nbsp;icon-volume-up
+        </span>
+        <span class="box1">
+        	<i class="icon-qrcode"></i>
+        	&nbsp;icon-qrcode
+        </span>
+        <span class="box1">
+        	<i class="icon-barcode"></i>
+        	&nbsp;icon-barcode
+        </span>
+        <span class="box1">
+        	<i class="icon-tag"></i>
+        	&nbsp;icon-tag
+        </span>
+        <span class="box1">
+        	<i class="icon-tags"></i>
+        	&nbsp;icon-tags
+        </span>
+        <span class="box1">
+        	<i class="icon-book"></i>
+        	&nbsp;icon-book
+        </span>
+        <span class="box1">
+        	<i class="icon-bookmark"></i>
+        	&nbsp;icon-bookmark
+        </span>
+        <span class="box1">
+        	<i class="icon-print"></i>
+        	&nbsp;icon-print
+        </span>
+        <span class="box1">
+        	<i class="icon-camera"></i>
+        	&nbsp;icon-camera
+        </span>
+        <span class="box1">
+        	<i class="icon-font"></i>
+        	&nbsp;icon-font
+        </span>
+        <span class="box1">
+        	<i class="icon-bold"></i>
+        	&nbsp;icon-bold
+        </span>
+        <span class="box1">
+        	<i class="icon-italic"></i>
+        	&nbsp;icon-italic
+        </span>
+        <span class="box1">
+        	<i class="icon-text-height"></i>
+        	&nbsp;icon-text-height
+        </span>
+        <span class="box1">
+        	<i class="icon-text-width"></i>
+        	&nbsp;icon-text-width
+        </span>
+        <span class="box1">
+        	<i class="icon-align-left"></i>
+        	&nbsp;icon-align-left
+        </span>
+        <span class="box1">
+        	<i class="icon-align-center"></i>
+        	&nbsp;icon-align-center
+        </span>
+        <span class="box1">
+        	<i class="icon-align-right"></i>
+        	&nbsp;icon-align-right
+        </span>
+        <span class="box1">
+        	<i class="icon-align-justify"></i>
+        	&nbsp;icon-align-justify
+        </span>
+        <span class="box1">
+        	<i class="icon-list"></i>
+        	&nbsp;icon-list
+        </span>
+        <span class="box1">
+        	<i class="icon-indent-left"></i>
+        	&nbsp;icon-indent-left
+        </span>
+        <span class="box1">
+        	<i class="icon-indent-right"></i>
+        	&nbsp;icon-indent-right
+        </span>
+        <span class="box1">
+        	<i class="icon-facetime-video"></i>
+        	&nbsp;icon-facetime-video
+        </span>
+        <span class="box1">
+        	<i class="icon-picture"></i>
+        	&nbsp;icon-picture
+        </span>
+        <span class="box1">
+        	<i class="icon-pencil"></i>
+        	&nbsp;icon-pencil
+        </span>
+        <span class="box1">
+        	<i class="icon-map-marker"></i>
+        	&nbsp;icon-map-marker
+        </span>
+        <span class="box1">
+        	<i class="icon-adjust"></i>
+        	&nbsp;icon-adjust
+        </span>
+        <span class="box1">
+        	<i class="icon-tint"></i>
+        	&nbsp;icon-tint
+        </span>
+        <span class="box1">
+        	<i class="icon-edit"></i>
+        	&nbsp;icon-edit
+        </span>
+        <span class="box1">
+        	<i class="icon-share"></i>
+        	&nbsp;icon-share
+        </span>
+        <span class="box1">
+        	<i class="icon-check"></i>
+        	&nbsp;icon-check
+        </span>
+        <span class="box1">
+        	<i class="icon-move"></i>
+        	&nbsp;icon-move
+        </span>
+        <span class="box1">
+        	<i class="icon-step-backward"></i>
+        	&nbsp;icon-step-backward
+        </span>
+        <span class="box1">
+        	<i class="icon-fast-backward"></i>
+        	&nbsp;icon-fast-backward
+        </span>
+        <span class="box1">
+        	<i class="icon-backward"></i>
+        	&nbsp;icon-backward
+        </span>
+        <span class="box1">
+        	<i class="icon-play"></i>
+        	&nbsp;icon-play
+        </span>
+        <span class="box1">
+        	<i class="icon-pause"></i>
+        	&nbsp;icon-pause
+        </span>
+        <span class="box1">
+        	<i class="icon-stop"></i>
+        	&nbsp;icon-stop
+        </span>
+        <span class="box1">
+        	<i class="icon-forward"></i>
+        	&nbsp;icon-forward
+        </span>
+        <span class="box1">
+        	<i class="icon-fast-forward"></i>
+        	&nbsp;icon-fast-forward
+        </span>
+        <span class="box1">
+        	<i class="icon-step-forward"></i>
+        	&nbsp;icon-step-forward
+        </span>
+        <span class="box1">
+        	<i class="icon-eject"></i>
+        	&nbsp;icon-eject
+        </span>
+        <span class="box1">
+        	<i class="icon-chevron-left"></i>
+        	&nbsp;icon-chevron-left
+        </span>
+        <span class="box1">
+        	<i class="icon-chevron-right"></i>
+        	&nbsp;icon-chevron-right
+        </span>
+        <span class="box1">
+        	<i class="icon-plus-sign"></i>
+        	&nbsp;icon-plus-sign
+        </span>
+        <span class="box1">
+        	<i class="icon-minus-sign"></i>
+        	&nbsp;icon-minus-sign
+        </span>
+        <span class="box1">
+        	<i class="icon-remove-sign"></i>
+        	&nbsp;icon-remove-sign
+        </span>
+        <span class="box1">
+        	<i class="icon-ok-sign"></i>
+        	&nbsp;icon-ok-sign
+        </span>
+        <span class="box1">
+        	<i class="icon-question-sign"></i>
+        	&nbsp;icon-question-sign
+        </span>
+        <span class="box1">
+        	<i class="icon-info-sign"></i>
+        	&nbsp;icon-info-sign
+        </span>
+        <span class="box1">
+        	<i class="icon-screenshot"></i>
+        	&nbsp;icon-screenshot
+        </span>
+        <span class="box1">
+        	<i class="icon-remove-circle"></i>
+        	&nbsp;icon-remove-circle
+        </span>
+        <span class="box1">
+        	<i class="icon-ok-circle"></i>
+        	&nbsp;icon-ok-circle
+        </span>
+        <span class="box1">
+        	<i class="icon-ban-circle"></i>
+        	&nbsp;icon-ban-circle
+        </span>
+        <span class="box1">
+        	<i class="icon-arrow-left"></i>
+        	&nbsp;icon-arrow-left
+        </span>
+        <span class="box1">
+        	<i class="icon-arrow-right"></i>
+        	&nbsp;icon-arrow-right
+        </span>
+        <span class="box1">
+        	<i class="icon-arrow-up"></i>
+        	&nbsp;icon-arrow-up
+        </span>
+        <span class="box1">
+        	<i class="icon-arrow-down"></i>
+        	&nbsp;icon-arrow-down
+        </span>
+        <span class="box1">
+        	<i class="icon-share-alt"></i>
+        	&nbsp;icon-share-alt
+        </span>
+        <span class="box1">
+        	<i class="icon-resize-full"></i>
+        	&nbsp;icon-resize-full
+        </span>
+        <span class="box1">
+        	<i class="icon-resize-small"></i>
+        	&nbsp;icon-resize-small
+        </span>
+        <span class="box1">
+        	<i class="icon-plus"></i>
+        	&nbsp;icon-plus
+        </span>
+        <span class="box1">
+        	<i class="icon-minus"></i>
+        	&nbsp;icon-minus
+        </span>
+        <span class="box1">
+        	<i class="icon-asterisk"></i>
+        	&nbsp;icon-asterisk
+        </span>
+        <span class="box1">
+        	<i class="icon-exclamation-sign"></i>
+        	&nbsp;icon-exclamation-sign
+        </span>
+        <span class="box1">
+        	<i class="icon-gift"></i>
+        	&nbsp;icon-gift
+        </span>
+        <span class="box1">
+        	<i class="icon-leaf"></i>
+        	&nbsp;icon-leaf
+        </span>
+        <span class="box1">
+        	<i class="icon-fire"></i>
+        	&nbsp;icon-fire
+        </span>
+        <span class="box1">
+        	<i class="icon-eye-open"></i>
+        	&nbsp;icon-eye-open
+        </span>
+        <span class="box1">
+        	<i class="icon-eye-close"></i>
+        	&nbsp;icon-eye-close
+        </span>
+        <span class="box1">
+        	<i class="icon-warning-sign"></i>
+        	&nbsp;icon-warning-sign
+        </span>
+        <span class="box1">
+        	<i class="icon-plane"></i>
+        	&nbsp;icon-plane
+        </span>
+        <span class="box1">
+        	<i class="icon-calendar"></i>
+        	&nbsp;icon-calendar
+        </span>
+        <span class="box1">
+        	<i class="icon-random"></i>
+        	&nbsp;icon-random
+        </span>
+        <span class="box1">
+        	<i class="icon-comment"></i>
+        	&nbsp;icon-comment
+        </span>
+        <span class="box1">
+        	<i class="icon-magnet"></i>
+        	&nbsp;icon-magnet
+        </span>
+        <span class="box1">
+        	<i class="icon-chevron-up"></i>
+        	&nbsp;icon-chevron-up
+        </span>
+        <span class="box1">
+        	<i class="icon-chevron-down"></i>
+        	&nbsp;icon-chevron-down
+        </span>
+        <span class="box1">
+        	<i class="icon-retweet"></i>
+        	&nbsp;icon-retweet
+        </span>
+        <span class="box1">
+        	<i class="icon-shopping-cart"></i>
+        	&nbsp;icon-shopping-cart
+        </span>
+        <span class="box1">
+        	<i class="icon-folder-close"></i>
+        	&nbsp;icon-folder-close
+        </span>
+        <span class="box1">
+        	<i class="icon-folder-open"></i>
+        	&nbsp;icon-folder-open
+        </span>
+        <span class="box1">
+        	<i class="icon-resize-vertical"></i>
+        	&nbsp;icon-resize-vertical
+        </span>
+        <span class="box1">
+        	<i class="icon-resize-horizontal"></i>
+        	&nbsp;icon-resize-horizontal
+        </span>
+        <span class="box1">
+        	<i class="icon-bar-chart"></i>
+        	&nbsp;icon-bar-chart
+        </span>
+        <span class="box1">
+        	<i class="icon-twitter-sign"></i>
+        	&nbsp;icon-twitter-sign
+        </span>
+        <span class="box1">
+        	<i class="icon-facebook-sign"></i>
+        	&nbsp;icon-facebook-sign
+        </span>
+        <span class="box1">
+        	<i class="icon-camera-retro"></i>
+        	&nbsp;icon-camera-retro
+        </span>
+        <span class="box1">
+        	<i class="icon-key"></i>
+        	&nbsp;icon-key
+        </span>
+        <span class="box1">
+        	<i class="icon-cogs"></i>
+        	&nbsp;icon-cogs
+        </span>
+        <span class="box1">
+        	<i class="icon-comments"></i>
+        	&nbsp;icon-comments
+        </span>
+        <span class="box1">
+        	<i class="icon-thumbs-up"></i>
+        	&nbsp;icon-thumbs-up
+        </span>
+        <span class="box1">
+        	<i class="icon-thumbs-down"></i>
+        	&nbsp;icon-thumbs-down
+        </span>
+        <span class="box1">
+        	<i class="icon-star-half"></i>
+        	&nbsp;icon-star-half
+        </span>
+        <span class="box1">
+        	<i class="icon-heart-empty"></i>
+        	&nbsp;icon-heart-empty
+        </span>
+        <span class="box1">
+        	<i class="icon-signout"></i>
+        	&nbsp;icon-signout
+        </span>
+        <span class="box1">
+        	<i class="icon-linkedin-sign"></i>
+        	&nbsp;icon-linkedin-sign
+        </span>
+        <span class="box1">
+        	<i class="icon-pushpin"></i>
+        	&nbsp;icon-pushpin
+        </span>
+        <span class="box1">
+        	<i class="icon-external-link"></i>
+        	&nbsp;icon-external-link
+        </span>
+        <span class="box1">
+        	<i class="icon-signin"></i>
+        	&nbsp;icon-signin
+        </span>
+        <span class="box1">
+        	<i class="icon-trophy"></i>
+        	&nbsp;icon-trophy
+        </span>
+        <span class="box1">
+        	<i class="icon-github-sign"></i>
+        	&nbsp;icon-github-sign
+        </span>
+        <span class="box1">
+        	<i class="icon-upload-alt"></i>
+        	&nbsp;icon-upload-alt
+        </span>
+        <span class="box1">
+        	<i class="icon-lemon"></i>
+        	&nbsp;icon-lemon
+        </span>
+        <span class="box1">
+        	<i class="icon-phone"></i>
+        	&nbsp;icon-phone
+        </span>
+        <span class="box1">
+        	<i class="icon-check-empty"></i>
+        	&nbsp;icon-check-empty
+        </span>
+        <span class="box1">
+        	<i class="icon-bookmark-empty"></i>
+        	&nbsp;icon-bookmark-empty
+        </span>
+        <span class="box1">
+        	<i class="icon-phone-sign"></i>
+        	&nbsp;icon-phone-sign
+        </span>
+        <span class="box1">
+        	<i class="icon-twitter"></i>
+        	&nbsp;icon-twitter
+        </span>
+        <span class="box1">
+        	<i class="icon-facebook"></i>
+        	&nbsp;icon-facebook
+        </span>
+        <span class="box1">
+        	<i class="icon-github"></i>
+        	&nbsp;icon-github
+        </span>
+        <span class="box1">
+        	<i class="icon-unlock"></i>
+        	&nbsp;icon-unlock
+        </span>
+        <span class="box1">
+        	<i class="icon-credit"></i>
+        	&nbsp;icon-credit
+        </span>
+        <span class="box1">
+        	<i class="icon-rss"></i>
+        	&nbsp;icon-rss
+        </span>
+        <span class="box1">
+        	<i class="icon-hdd"></i>
+        	&nbsp;icon-hdd
+        </span>
+        <span class="box1">
+        	<i class="icon-bullhorn"></i>
+        	&nbsp;icon-bullhorn
+        </span>
+        <span class="box1">
+        	<i class="icon-bell"></i>
+        	&nbsp;icon-bell
+        </span>
+        <span class="box1">
+        	<i class="icon-certificate"></i>
+        	&nbsp;icon-certificate
+        </span>
+        <span class="box1">
+        	<i class="icon-hand-right"></i>
+        	&nbsp;icon-hand-right
+        </span>
+        <span class="box1">
+        	<i class="icon-hand-left"></i>
+        	&nbsp;icon-hand-left
+        </span>
+        <span class="box1">
+        	<i class="icon-hand-up"></i>
+        	&nbsp;icon-hand-up
+        </span>
+        <span class="box1">
+        	<i class="icon-hand-down"></i>
+        	&nbsp;icon-hand-down
+        </span>
+        <span class="box1">
+        	<i class="icon-circle-arrow-left"></i>
+        	&nbsp;icon-circle-arrow-left
+        </span>
+        <span class="box1">
+        	<i class="icon-circle-arrow-right"></i>
+        	&nbsp;icon-circle-arrow-right
+        </span>
+        <span class="box1">
+        	<i class="icon-circle-arrow-up"></i>
+        	&nbsp;icon-circle-arrow-up
+        </span>
+        <span class="box1">
+        	<i class="icon-circle-arrow-down"></i>
+        	&nbsp;icon-circle-arrow-down
+        </span>
+        <span class="box1">
+        	<i class="icon-globe"></i>
+        	&nbsp;icon-globe
+        </span>
+        <span class="box1">
+        	<i class="icon-wrench"></i>
+        	&nbsp;icon-wrench
+        </span>
+        <span class="box1">
+        	<i class="icon-tasks"></i>
+        	&nbsp;icon-tasks
+        </span>
+        <span class="box1">
+        	<i class="icon-filter"></i>
+        	&nbsp;icon-filter
+        </span>
+        <span class="box1">
+        	<i class="icon-briefcase"></i>
+        	&nbsp;icon-briefcase
+        </span>
+        <span class="box1">
+        	<i class="icon-fullscreen"></i>
+        	&nbsp;icon-fullscreen
+        </span>
+        <span class="box1">
+        	<i class="icon-group"></i>
+        	&nbsp;icon-group
+        </span>
+        <span class="box1">
+        	<i class="icon-link"></i>
+        	&nbsp;icon-link
+        </span>
+        <span class="box1">
+        	<i class="icon-cloud"></i>
+        	&nbsp;icon-cloud
+        </span>
+        <span class="box1">
+        	<i class="icon-beaker"></i>
+        	&nbsp;icon-beaker
+        </span>
+        <span class="box1">
+        	<i class="icon-cut"></i>
+        	&nbsp;icon-cut
+        </span>
+        <span class="box1">
+        	<i class="icon-copy"></i>
+        	&nbsp;icon-copy
+        </span>
+        <span class="box1">
+        	<i class="icon-paper-clip"></i>
+        	&nbsp;icon-paper-clip
+        </span>
+        <span class="box1">
+        	<i class="icon-save"></i>
+        	&nbsp;icon-save
+        </span>
+        <span class="box1">
+        	<i class="icon-sign-blank"></i>
+        	&nbsp;icon-sign-blank
+        </span>
+        <span class="box1">
+        	<i class="icon-reorder"></i>
+        	&nbsp;icon-reorder
+        </span>
+        <span class="box1">
+        	<i class="icon-list-ul"></i>
+        	&nbsp;icon-list-ul
+        </span>
+        <span class="box1">
+        	<i class="icon-list-ol"></i>
+        	&nbsp;icon-list-ol
+        </span>
+        <span class="box1">
+        	<i class="icon-strikethrough"></i>
+        	&nbsp;icon-strikethrough
+        </span>
+        <span class="box1">
+        	<i class="icon-underline"></i>
+        	&nbsp;icon-underline
+        </span>
+        <span class="box1">
+        	<i class="icon-table"></i>
+        	&nbsp;icon-table
+        </span>
+        <span class="box1">
+        	<i class="icon-magic"></i>
+        	&nbsp;icon-magic
+        </span>
+        <span class="box1">
+        	<i class="icon-truck"></i>
+        	&nbsp;icon-truck
+        </span>
+        <span class="box1">
+        	<i class="icon-pinterest"></i>
+        	&nbsp;icon-pinterest
+        </span>
+        <span class="box1">
+        	<i class="icon-pinterest-sign"></i>
+        	&nbsp;icon-pinterest-sign
+        </span>
+        <span class="box1">
+        	<i class="icon-google-plus-sign"></i>
+        	&nbsp;icon-google-plus-sign
+        </span>
+        <span class="box1">
+        	<i class="icon-google-plus"></i>
+        	&nbsp;icon-google-plus
+        </span>
+        <span class="box1">
+        	<i class="icon-money"></i>
+        	&nbsp;icon-money
+        </span>
+        <span class="box1">
+        	<i class="icon-caret-down"></i>
+        	&nbsp;icon-caret-down
+        </span>
+        <span class="box1">
+        	<i class="icon-caret-up"></i>
+        	&nbsp;icon-caret-up
+        </span>
+        <span class="box1">
+        	<i class="icon-caret-left"></i>
+        	&nbsp;icon-caret-left
+        </span>
+        <span class="box1">
+        	<i class="icon-caret-right"></i>
+        	&nbsp;icon-caret-right
+        </span>
+        <span class="box1">
+        	<i class="icon-columns"></i>
+        	&nbsp;icon-columns
+        </span>
+        <span class="box1">
+        	<i class="icon-sort"></i>
+        	&nbsp;icon-sort
+        </span>
+        <span class="box1">
+        	<i class="icon-sort-down"></i>
+        	&nbsp;icon-sort-down
+        </span>
+        <span class="box1">
+        	<i class="icon-sort-up"></i>
+        	&nbsp;icon-sort-up
+        </span>
+        <span class="box1">
+        	<i class="icon-envelope-alt"></i>
+        	&nbsp;icon-envelope-alt
+        </span>
+        <span class="box1">
+        	<i class="icon-undo"></i>
+        	&nbsp;icon-undo
+        </span>
+        <span class="box1">
+        	<i class="icon-legal"></i>
+        	&nbsp;icon-legal
+        </span>
+        <span class="box1">
+        	<i class="icon-dashboard"></i>
+        	&nbsp;icon-dashboard
+        </span>
+        <span class="box1">
+        	<i class="icon-comment-alt"></i>
+        	&nbsp;icon-comment-alt
+        </span>
+        <span class="box1">
+        	<i class="icon-comments-alt"></i>
+        	&nbsp;icon-comments-alt
+        </span>
+        <span class="box1">
+        	<i class="icon-bolt"></i>
+        	&nbsp;icon-bolt
+        </span>
+        <span class="box1">
+        	<i class="icon-sitemap"></i>
+        	&nbsp;icon-sitemap
+        </span>
+        <span class="box1">
+        	<i class="icon-umbrella"></i>
+        	&nbsp;icon-umbrella
+        </span>
+        <span class="box1">
+        	<i class="icon-paste"></i>
+        	&nbsp;icon-paste
+        </span>
+        <span class="box1">
+        	<i class="icon-lightbulb"></i>
+        	&nbsp;icon-lightbulb
+        </span>
+        <span class="box1">
+        	<i class="icon-exchange"></i>
+        	&nbsp;icon-exchange
+        </span>
+        <span class="box1">
+        	<i class="icon-cloud-download"></i>
+        	&nbsp;icon-cloud-download
+        </span>
+        <span class="box1">
+        	<i class="icon-cloud-upload"></i>
+        	&nbsp;icon-cloud-upload
+        </span>
+        <span class="box1">
+        	<i class="icon-user-md"></i>
+        	&nbsp;icon-user-md
+        </span>
+        <span class="box1">
+        	<i class="icon-stethoscope"></i>
+        	&nbsp;icon-stethoscope
+        </span>
+        <span class="box1">
+        	<i class="icon-suitcase"></i>
+        	&nbsp;icon-suitcase
+        </span>
+        <span class="box1">
+        	<i class="icon-bell-alt"></i>
+        	&nbsp;icon-bell-alt
+        </span>
+        <span class="box1">
+        	<i class="icon-coffee"></i>
+        	&nbsp;icon-coffee
+        </span>
+        <span class="box1">
+        	<i class="icon-food"></i>
+        	&nbsp;icon-food
+        </span>
+        <span class="box1">
+        	<i class="icon-file-alt"></i>
+        	&nbsp;icon-file-alt
+        </span>
+        <span class="box1">
+        	<i class="icon-building"></i>
+        	&nbsp;icon-building
+        </span>
+        <span class="box1">
+        	<i class="icon-hospital"></i>
+        	&nbsp;icon-hospital
+        </span>
+        <span class="box1">
+        	<i class="icon-ambulance"></i>
+        	&nbsp;icon-ambulance
+        </span>
+        <span class="box1">
+        	<i class="icon-medkit"></i>
+        	&nbsp;icon-medkit
+        </span>
+        <span class="box1">
+        	<i class="icon-fighter-jet"></i>
+        	&nbsp;icon-fighter-jet
+        </span>
+        <span class="box1">
+        	<i class="icon-beer"></i>
+        	&nbsp;icon-beer
+        </span>
+        <span class="box1">
+        	<i class="icon-h-sign"></i>
+        	&nbsp;icon-h-sign
+        </span>
+        <span class="box1">
+        	<i class="icon-plus-sign-2"></i>
+        	&nbsp;icon-plus-sign-2
+        </span>
+        <span class="box1">
+        	<i class="icon-double-angle-left"></i>
+        	&nbsp;icon-double-angle-left
+        </span>
+        <span class="box1">
+        	<i class="icon-double-angle-right"></i>
+        	&nbsp;icon-double-angle-right
+        </span>
+        <span class="box1">
+        	<i class="icon-double-angle-up"></i>
+        	&nbsp;icon-double-angle-up
+        </span>
+        <span class="box1">
+        	<i class="icon-double-angle-down"></i>
+        	&nbsp;icon-double-angle-down
+        </span>
+        <span class="box1">
+        	<i class="icon-angle-left"></i>
+        	&nbsp;icon-angle-left
+        </span>
+        <span class="box1">
+        	<i class="icon-angle-right"></i>
+        	&nbsp;icon-angle-right
+        </span>
+        <span class="box1">
+        	<i class="icon-angle-up"></i>
+        	&nbsp;icon-angle-up
+        </span>
+        <span class="box1">
+        	<i class="icon-angle-down"></i>
+        	&nbsp;icon-angle-down
+        </span>
+        <span class="box1">
+        	<i class="icon-desktop"></i>
+        	&nbsp;icon-desktop
+        </span>
+        <span class="box1">
+        	<i class="icon-laptop"></i>
+        	&nbsp;icon-laptop
+        </span>
+        <span class="box1">
+        	<i class="icon-tablet"></i>
+        	&nbsp;icon-tablet
+        </span>
+        <span class="box1">
+        	<i class="icon-mobile"></i>
+        	&nbsp;icon-mobile
+        </span>
+        <span class="box1">
+        	<i class="icon-circle-blank"></i>
+        	&nbsp;icon-circle-blank
+        </span>
+        <span class="box1">
+        	<i class="icon-quote-left"></i>
+        	&nbsp;icon-quote-left
+        </span>
+        <span class="box1">
+        	<i class="icon-quote-right"></i>
+        	&nbsp;icon-quote-right
+        </span>
+        <span class="box1">
+        	<i class="icon-spinner"></i>
+        	&nbsp;icon-spinner
+        </span>
+        <span class="box1">
+        	<i class="icon-circle"></i>
+        	&nbsp;icon-circle
+        </span>
+        <span class="box1">
+        	<i class="icon-reply"></i>
+        	&nbsp;icon-reply
+        </span>
+        <span class="box1">
+        	<i class="icon-github-alt"></i>
+        	&nbsp;icon-github-alt
+        </span>
+        <span class="box1">
+        	<i class="icon-folder-close-alt"></i>
+        	&nbsp;icon-folder-close-alt
+        </span>
+        <span class="box1">
+        	<i class="icon-folder-open-alt"></i>
+        	&nbsp;icon-folder-open-alt
+        </span>
+        <span class="box1">
+        	<i class="icon-linkedin"></i>
+        	&nbsp;icon-linkedin
+        </span>
+    </div>
+</div>
+
+
+</div>
+<!-- end of pz-wrapper -->
+    
+
+</body>
+</html>
