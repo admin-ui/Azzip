@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Azzip admin 组件</title>
+<link href="assets/css/common.css?ver=1.01" type="text/css" rel="stylesheet" />
+<link href="assets/css/font.css?ver=1.01" type="text/css" rel="stylesheet" />
+<link href="assets/css/frame.css?ver=1.01" type="text/css" rel="stylesheet" />
+<!--[if lt IE 8]>
+<script type="text/javascript" src="assets/js/font.js"></script>
+<script defer type="text/javascript" src="assets/js/pngfix.js"></script>
+<![endif]-->
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/jquery/calendar.js"></script>
+<script type="text/javascript" src="assets/js/jquery/tools.js"></script>
+<script type="text/javascript" src="assets/js/frame.js"></script>
+</head>
+<body>
+
+
+<div id="pz-header" class="pz-header pz-fix-top">
+    <h1>Azzip UI - 组件</h1>
+    <a href="#buttonGroup" rel="section-toggle" class="pz-btn">按钮组</a>
+    <a href="#dropdown" rel="section-toggle" class="pz-btn">菜单</a>
+    <a href="#tabs" rel="section-toggle" class="pz-btn">标签页</a>
+    <a href="#tags" rel="section-toggle" class="pz-btn">标记和徽章</a>
+    <a href="#thumbnail" rel="section-toggle" class="pz-btn">图片框</a>
+    <a href="#alert" rel="section-toggle" class="pz-btn">警告框</a>
+</div>
+<div id="pz-shader" class="pz-shader pz-fix-top"></div>
+<div class="pz-header-fix-space"></div>
+
+
+<div class="pz-wrapper">
+
+
+<div class="pz-heading" id="buttonGroup">
+    <h2>按钮组
+        <small>pz-btn-group</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <p>使用<code>&lt;a></code>或<code>&lt;input type="button"></code>标签制作按钮</p>
+                <p>不推荐<code>&lt;button></code>标签，因为老浏览器有兼容问题</p>
+                <p>&nbsp;</p>
+                <p>使用<code>class="pz-btn-group"</code>包围一组按钮，如下:</p>
+                <div class="pz-box-content">
+                    <div class="pz-btn-group">
+                        <a href="javascript:;" class="pz-btn">小白</a>
+                        <a href="javascript:;" class="pz-btn">小白白</a>
+                        <a href="javascript:;" class="pz-btn pz-btn-danger">小红</a>
+                        <a href="javascript:;" class="pz-btn pz-btn-success">小绿</a>
+                    </div>
+                </div>
+                <p>结构如下:</p>
+                <code class="clearfix">
+                    <pre>
+&lt;div class="pz-btn-group">
+    &lt;a href="xx" class="pz-btn">小白&lt;/a>
+    ......
+&lt;/div></pre>
+                </code>
+            </div>
+        </div>
+    </div>
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <p>仿工具栏的效果，如下:</p>
+                <div class="pz-box-content">
+                    <div class="pz-btn-group">
+                        <a href="javascript:;" class="pz-btn">小白</a>
+                        <a href="javascript:;" class="pz-btn pz-btn-danger">小红</a>
+                        <a href="javascript:;" class="pz-btn pz-btn-success">小绿</a>
+                    </div>
+                    <div class="pz-btn-group">
+                        <a href="javascript:;" class="pz-btn">小2</a>
+                        <a href="javascript:;" class="pz-btn">小白3</a>
+                        <a href="javascript:;" class="pz-btn">小小白</a>
+                    </div>
+                    <div class="pz-btn-group">
+                        <a href="javascript:;" class="pz-btn">小白</a>
+                        <a href="javascript:;" class="pz-btn">小白2</a>
+                    </div>
+                </div>
+                <p>结构如下:</p>
+                <code class="clearfix">
+                    <pre>
+&lt;div class="pz-btn-group">
+    &lt;a href="xx" class="pz-btn">小白&lt;/a>
+    ......
+&lt;/div>&nbsp;
+&lt;div class="pz-btn-group">
+    &lt;a href="xx" class="pz-btn">小2&lt;/a>
+    ......
+&lt;/div></pre>
+                </code>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pz-heading" id="dropdown">
+    <h2>菜单
+        <small>pz-submenu</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-side">
+        <div class="pz-block">
+            <ul class="pz-submenu">
+                <li><a href="javascript:;">这是菜单</a></li>
+                <li><a href="javascript:;">Hello</a></li>
+                <li><span>你好，我不是链接</span></li>
+                <li><a href="javascript:;">World</a></li>
+                <li class="pz-submenu-gap"></li>
+                <li><a href="javascript:;">Azzip</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="pz-fluid-main">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <pre>
+&lt;ul class="pz-submenu">
+    &lt;li>&lt;a href="javascript:;">这是菜单&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="javascript:;">Hello&lt;/a>&lt;/li>
+    &lt;li>&lt;span>你好，我不是链接&lt;/span>&lt;/li>
+    &lt;li>&lt;a href="javascript:;">World&lt;/a>&lt;/li>
+    &lt;li class="pz-submenu-gap">&lt;/li>
+    &lt;li>&lt;a href="javascript:;">Azzip&lt;/a>&lt;/li>
+&lt;/ul></pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pz-heading">
+    <h3>下拉菜单
+        <small>pz-submenu</small>
+    </h3>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-side">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <a href="javascript:;" class="pz-btn pz-btn-submit" rel="menu-down">点击我看看 <i class="icon-caret-down"></i></a>
+                <ul class="pz-submenu" style="display:none">
+                    <li><a href="javascript:;">这是菜单</a></li>
+                    <li><a href="javascript:;">Hello</a></li>
+                    <li><span>你好，我不是链接</span></li>
+                    <li><a href="javascript:;">World</a></li>
+                    <li class="pz-submenu-gap"></li>
+                    <li><a href="javascript:;">Azzip</a></li>
+                </ul>
+                &nbsp;
+                <a href="javascript:;" class="pz-btn pz-btn-submit" rel="menu-up">向上的菜单 <i class="icon-caret-down"></i></a>
+                <ul class="pz-submenu" style="display:none">
+                    <li><a href="javascript:;">这是菜单</a></li>
+                    <li><a href="javascript:;">Hello</a></li>
+                    <li><span>你好，我不是链接</span></li>
+                    <li><a href="javascript:;">World</a></li>
+                    <li class="pz-submenu-gap"></li>
+                    <li><a href="javascript:;">Azzip</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="pz-fluid-main">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <pre>
+&lt;a href="javascript:;" class="pz-btn pz-btn-submit" 
+    rel="menu-down">点击我看看 &lt;i class="icon-caret-down">&lt;/i>&lt;/a>
+&lt;ul class="pz-submenu" style="display:none">
+    &lt;li>...&lt;/li>
+&lt;/ul>
+
+&lt;a href="javascript:;" class="pz-btn pz-btn-submit" 
+    rel="menu-up">向上的菜单 &lt;i class="icon-caret-down">&lt;/i>&lt;/a>
+&lt;ul class="pz-submenu" style="display:none">
+    &lt;li>...&lt;/li>
+&lt;/ul></pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pz-heading" id="tabs">
+    <h2>标签页
+        <small>pz-tab-header pz-tab</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-dual">
+        <div class="pz-tab-header clearfix">
+            <a href="javascript:;" class="link-on">tab1</a>
+            <a href="javascript:;">标签2</a>
+            <a href="javascript:;">标签3</a>
+        </div>
+        <div class="pz-box pz-tab">
+            <br /><br />&nbsp; tab1 content<br /><br />
+        </div>
+        <div class="pz-box pz-tab">
+            <br /><br />&nbsp; tab2的内容<br /><br />
+        </div>
+        <div class="pz-box pz-tab">
+            <br /><br />&nbsp; tab3的内容<br /><br />
+        </div>
+    </div>
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <code class="clearfix">
+                    <pre>
+&lt;div class="pz-tab-header clearfix">
+    &lt;a href="javascript:;" class="link-on">tab1&lt;/a>
+    &lt;a href="javascript:;">标签2&lt;/a>
+    &lt;a href="javascript:;">标签3&lt;/a>
+&lt;/div>
+&lt;div class="pz-box pz-tab">tab1 content&lt;/div>
+&lt;div class="pz-box pz-tab">tab2的内容&lt;/div>
+&lt;div class="pz-box pz-tab">tab3的内容&lt;/div></pre>
+                </code>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pz-heading" id="tags">
+    <h2>标记和徽章
+        <small>pz-tag pz-badge</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <span class="pz-tag">普通标记 span.pz-tag</span><br />
+                <span class="pz-tag pz-tag-reverse">反色标记 span.pz-tag.pz-tag-reverse</span><br />
+                <span class="pz-tag pz-tag-success">成功标记 span.pz-tag.pz-tag-success</span><br />
+                <span class="pz-tag pz-tag-warning">警告标记 span.pz-tag.pz-tag-warning</span><br />
+                <span class="pz-tag pz-tag-danger">危险操作 span.pz-tag.pz-tag-danger</span><br />
+                <span class="pz-tag pz-tag-info">信息 span.pz-tag.pz-tag-info</span><br />
+                <span class="pz-tag pz-tag-submit">提交信息 span.pz-tag.pz-tag-submit</span><br />
+            </div>
+        </div>
+    </div>
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <span class="pz-badge">普通徽章 span.pz-badge</span><br />
+                <span class="pz-badge pz-badge-reverse">反色徽章 span.pz-badge.pz-badge-reverse</span><br />
+                <span class="pz-badge pz-badge-success">成功徽章 span.pz-badge.pz-badge-success</span><br />
+                <span class="pz-badge pz-badge-warning">警告徽章 span.pz-badge.pz-badge-warning</span><br />
+                <span class="pz-badge pz-badge-danger">危险操作徽章 span.pz-badge.pz-badge-danger</span><br />
+                <span class="pz-badge pz-badge-info">信息徽章 span.pz-badge.pz-badge-info</span><br />
+                <span class="pz-badge pz-badge-submit">提交徽章 span.pz-badge.pz-badge-submit</span><br />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pz-heading" id="thumbnails">
+    <h2>图片框
+        <small>pz-thumb</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-dual">
+        <div class="pz-block">
+            <ul>
+                <li style="float:left;"><a href="javascript:;" class="pz-thumb"><img src="<?php echo Yii::app()->request->baseUrl;?>/assets/img/bg-side.gif" alt="260x180" style="width: 260px; height: 180px;" /></a></li>
+                <li style="float:left;"><a href="javascript:;" class="pz-thumb"><img src="<?php echo Yii::app()->request->baseUrl;?>/assets/img/bg-side.gif" alt="260x180" style="width: 260px; height: 180px;" /></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <p>使用<code>&lt;a class="pz-thumb" href="xx">&lt;img src="xxx" />&lt;/a></code>生成一个图片框</p>
+                <p></p>
+                <p>如果需要做成图片排列，可以使用<code>&lt;li style="float:left">...pz-thumb...&lt;/lt></code></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pz-heading" id="alert">
+    <h2>警告框
+        <small>pz-alert</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-dual">
+        <div class="pz-alert">
+            <h3>警告框的标题 h3 class="pz-alert"</h3>
+            <p>这是内容 lorem ipsum 用 p 标签</p>
+            <a href="javascript:;" class="pz-alert-close">X</a>
+        </div>
+        <div class="pz-alert pz-alert-success">
+            <p>成功提示 div class="pz-alert pz-alert-success"</p>
+            <a href="javascript:;" class="pz-alert-close">X</a>
+        </div>
+        <div class="pz-alert pz-alert-error">
+            <p>错误提示 div class="pz-alert pz-alert-error"</p>
+            <a href="javascript:;" class="pz-alert-close">X</a>
+        </div>
+        <div class="pz-alert pz-alert-info">
+            <p>信息提示 div class="pz-alert pz-alert-info"</p>
+            <a href="javascript:;" class="pz-alert-close">X</a>
+        </div>
+    </div>
+
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <p>代码:</p>
+                <code class="clearfix">
+                    <pre>
+&lt;div class="pz-alert">
+    &lt;h3>警告框的标题 h3&lt;/h3>
+    &lt;p>这是内容 lorem ipsum 用 p 标签&lt;/p>
+    &lt;a href="javascript:;" class="pz-alert-close">X&lt;/a>
+&lt;/div></pre>
+                </code>
+                <br />
+                <p>添加提示关闭按钮，在<code>div.pz-alert</code>内部增加代码:</p>
+                <p><code>&lt;a href="javascript:;" class="pz-alert-close">X&lt;/a></code></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<!-- end of pz-wrapper -->    
+
+
+</body>
+</html>
