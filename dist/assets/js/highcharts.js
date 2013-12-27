@@ -306,7 +306,7 @@ $(function () {
             },
             yAxis: {
                 title: {
-                    text: 'Temperature (¡ãC)'
+                    text: 'Temperature (Â°C)'
                 },
                 plotLines: [{
                     value: 0,
@@ -315,7 +315,7 @@ $(function () {
                 }]
             },
             tooltip: {
-                valueSuffix: '¡ãC'
+                valueSuffix: 'Â°C'
             },
             legend: {
                 layout: 'vertical',
