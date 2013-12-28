@@ -1,0 +1,25 @@
+{
+  "name": "Azzip-admin",
+  "version": "0.1.2",
+  "author": {
+    "name": "billy",
+    "email": "reseason@gmail.com",
+    "url": "https://github.com/admin-ui"
+  },
+  "description": "Azzip-admin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/admin-ui/Azzip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/admin-ui/Azzip/issues"
+  },
+  "licenses": {
+    "type": "MIT",
+    "url": "https://github.com/admin-ui/Azzip/blob/master/README.md"
+  },
+  "dependencies": {
+    "gmaps": "~0.4.8"
+  }
+}

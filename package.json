@@ -1,0 +1,35 @@
+{
+  "name": "Bootstrap-Admin-Template",
+  "version": "2.1.2",
+  "author": {
+    "name": "Azzip-admin",
+    "email": "reseason@gmail.com",
+    "url": "https://github.com/admin-ui"
+  },
+  "description": "Twitter Bootstrap Admin Template",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/admin-ui/Azzip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/admin-ui/Azzip/issues"
+  },
+  "licenses": "MIT",
+  "devDependencies": {
+    "bower": "~1.2.8",
+    "grunt-cli": "~0.1.11",
+    "grunt": "~0.4.2",
+    "assemble": "~0.4.32",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jshint": "~0.7.0",
+    "grunt-contrib-uglify": "~0.2.5",
+    "grunt-contrib-qunit": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-copy": "~0.4.1",
+    "assemble-less": "~0.5.3",
+    "pretty": "~0.1.1"
+  }
+}
