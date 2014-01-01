@@ -20,6 +20,7 @@
     "url": "https://github.com/admin-ui/Azzip/blob/master/README.md"
   },
   "dependencies": {
-    "gmaps": "~0.4.8"
+    "gmaps": "~0.4.8",
+    "jquery":"~1.7.2"
   }
 }
