@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Azzip admin 典型页面:编辑器</title>
+<link href="assets/css/common.css?ver=1.01" type="text/css" rel="stylesheet" />
+<link href="assets/css/font.css?ver=1.01" type="text/css" rel="stylesheet" />
+<link href="assets/css/frame.css?ver=1.01" type="text/css" rel="stylesheet" />
+<!--[if lt IE 8]>
+<script type="text/javascript" src="assets/js/font.js"></script>
+<script defer type="text/javascript" src="assets/js/pngfix.js"></script>
+<![endif]-->
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/jquery/calendar.js"></script>
+<script type="text/javascript" src="assets/js/jquery/tools.js"></script>
+<script type="text/javascript" src="assets/js/jquery/tools.js"></script>
+<script type="text/javascript" src="assets/js/frame.js"></script>
+<script type="text/javascript" src="assets/js/kindeditor/kindeditor.js"></script>
+<link rel="stylesheet" href="assets/js/kindeditor/themes/default/default.css" />
+<script charset="utf-8" src="assets/js/kindeditor/lang/zh_CN.js"></script>
+<link href="assets/css/vselect.css" type="text/css" rel="stylesheet" />
+		<script>
+			KindEditor.lang({
+				example1 : '插入HTML'
+			});
+			KindEditor.plugin('example1', function(K) {
+				var self = this, name = 'example1';
+				self.clickToolbar(name, function() {
+					self.insertHtml('<strong>测试内容</strong>');
+				});
+			});
+			// 自定义插件 #2
+			KindEditor.lang({
+				example2 : 'CLASS样式'
+			});
+			KindEditor.plugin('example2', function(K) {
+				var self = this, name = 'example2';
+				function click(value) {
+					var cmd = self.cmd;
+					if (value === 'adv_strikethrough') {
+						cmd.wrap('<span style="background-color:#e53333;text-decoration:line-through;"></span>');
+					} else {
+						cmd.wrap('<span class="' + value + '"></span>');
+					}
+					cmd.select();
+					self.hideMenu();
+				}
+				self.clickToolbar(name, function() {
+					var menu = self.createMenu({
+						name : name,
+						width : 150
+					});
+					menu.addItem({
+						title : '红底白字',
+						click : function() {
+							click('red');
+						}
+					});
+					menu.addItem({
+						title : '绿底白字',
+						click : function() {
+							click('green');
+						}
+					});
+					menu.addItem({
+						title : '黄底白字',
+						click : function() {
+							click('yellow');
+						}
+					});
+					menu.addItem({
+						title : '自定义删除线',
+						click : function() {
+							click('adv_strikethrough');
+						}
+					});
+				});
+			});
+			var editor;
+			KindEditor.ready(function(K) {
+				editor = K.create('textarea[name="content1"]', {
+					allowFileManager : true
+				});
+				editor = K.create('textarea[name="content2"]', {
+					resizeType : 1,
+					allowPreviewEmoticons : false,
+					allowImageUpload : false,
+					items : [
+						'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+						'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+						'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+				});
+				editor = K.create('textarea[name="content3"]', {
+					filterMode : false
+				});
+				editor = K.create('textarea[name="content4"]', {
+					cssPath : ['assets/js/kindeditor/plugins/code/prettify.css', 'assets/js/kindeditor/examples/index.css'],
+					items : ['source', 'removeformat', 'example1', 'example2', 'code']
+				});
+			});
+		</script>
+</head>
+<body>
+
+
+<div id="pz-header" class="pz-header pz-fix-top">
+    <h1>Azzip UI - 典型页面:编辑器</h1>
+    <a href="#content1" rel="section-toggle" class="pz-btn">默认模式</a>
+    <a href="#content2" rel="section-toggle" class="pz-btn">简单模式</a>
+    <a href="#content3" rel="section-toggle" class="pz-btn">关闭HTML过滤</a>
+    <a href="#content4" rel="section-toggle" class="pz-btn">自定义插件</a>
+</div>
+<div id="pz-shader" class="pz-shader pz-fix-top"></div>
+<div class="pz-header-fix-space"></div>
+
+
+<div class="pz-wrapper">
+
+
+<div class="pz-box">
+    <div class="pz-box-header" id="content1">
+        默认模式
+    </div>
+    <div class="pz-form">
+        <div class="pz-form-row">
+        	<div class="pz-form-label">内容</div>
+			<textarea name="content1" style="width:.300px;height:300px;visibility:hidden;">KindEditor</textarea>
+        </div>
+        <div class="pz-form-footer">
+            <input type="submit" value="提交" class="pz-btn pz-btn-danger" />
+        </div>
+    </div>
+</div>
+
+<div class="pz-box">
+    <div class="pz-box-header" id="content2">
+        简单模式
+    </div>
+    <div class="pz-form">
+        <div class="pz-form-row">
+        	<div class="pz-form-label">内容</div>
+			<textarea name="content2" style="width:.300px;height:300px;visibility:hidden;">KindEditor</textarea>
+        </div>
+        <div class="pz-form-footer">
+            <input type="submit" value="提交" class="pz-btn pz-btn-danger" />
+        </div>
+    </div>
+</div>
+<div class="pz-box">
+    <div class="pz-box-header" id="content3">
+        关闭HTML过滤
+    </div>
+    <div class="pz-form">
+        <div class="pz-form-row">
+        	<div class="pz-form-label">内容</div>
+			<textarea name="content3" style="width:.300px;height:300px;visibility:hidden;">KindEditor</textarea>
+        </div>
+        <div class="pz-form-footer">
+            <input type="submit" value="提交" class="pz-btn pz-btn-danger" />
+        </div>
+    </div>
+</div>
+
+<div class="pz-box">
+    <div class="pz-box-header" id="content4">
+        自定义插件
+    </div>
+    <div class="pz-form">
+        <div class="pz-form-row">
+        	<div class="pz-form-label">内容</div>
+			<textarea name="content4" style="width:.300px;height:300px;visibility:hidden;">KindEditor</textarea>
+        </div>
+        <div class="pz-form-footer">
+            <input type="submit" value="提交" class="pz-btn pz-btn-danger" />
+        </div>
+    </div>
+</div>
+
+</div>
+<!-- end of pz-wrapper -->
+
+
+</body>
+</html>
