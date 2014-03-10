@@ -1,0 +1,1504 @@
+doctype html
+html(lang='zh-CN')
+  head
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    title Azzip admin basic
+    link(href='assets/css/common.css?ver=1.01', type='text/css', rel='stylesheet')
+    link(href='assets/css/font.css?ver=1.01', type='text/css', rel='stylesheet')
+    link(href='assets/css/frame.css?ver=1.01', type='text/css', rel='stylesheet')
+    //if lt IE 8
+      script(type='text/javascript', src='assets/js/font.js')
+      script(defer='', type='text/javascript', src='assets/js/pngfix.js')
+    script(type='text/javascript', src='assets/js/jquery.js')
+    script(type='text/javascript', src='assets/js/jquery/calendar.js')
+    script(type='text/javascript', src='assets/js/jquery/tools.js')
+    script(type='text/javascript', src='assets/js/frame.js')
+  body
+    #pz-header.pz-header.pz-fix-top
+      h1 Azzip UI - &#22522;&#30784;css
+      a.pz-btn(href='#cssBox', rel='section-toggle') &#21253;&#22260;
+      a.pz-btn(href='#cssBlock', rel='section-toggle') &#21306;&#22359;
+      a.pz-btn(href='#cssTypesetting', rel='section-toggle') &#25490;&#29256;
+      a.pz-btn(href='#cssTable', rel='section-toggle') &#34920;&#26684;
+      a.pz-btn(href='#cssPager', rel='section-toggle') &#32763;&#39029;&#31867;
+      a.pz-btn(href='#cssForm', rel='section-toggle') &#34920;&#21333;
+      a.pz-btn(href='#cssButton', rel='section-toggle') &#25353;&#38062;
+      a.pz-btn(href='#cssIcon', rel='section-toggle') &#22270;&#26631;
+    #pz-shader.pz-shader.pz-fix-top
+    .pz-header-fix-space
+    //
+       
+      不浮动的header:
+          去掉 pz-shader 和 pz-header-fix-space
+          pz-header class 去掉 "pz-fix-top"
+       
+    .pz-wrapper
+      #cssBox.pz-heading
+        h2
+          | &#21253;&#22260;
+          small pz-box&comma; pz-box-header&comma; pz-box-content
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              code pz-box
+              | &#24102;&#36793;&#26694;&#21644;&#30333;&#33394;&#32972;&#26223;&#30340;&#21253;&#22260;
+              br
+              p Demo code &lpar;&#21491;&#20391;&#26159;&#26174;&#31034;&#25928;&#26524;&rpar;&colon;
+              pre.
+                \n<div class="pz-box">
+                    <div class="pz-box-header">
+                        这是box的标题 <span>附属说明</span>
+                    </div>
+                    <div class="pz-box-content">
+                        box内容
+                    </div>
+                </div>                
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-header
+              | &#36825;&#26159;box&#30340;&#26631;&#39064;
+              span &#38468;&#23646;&#35828;&#26126;
+            .pz-box-content
+              | box&#20869;&#23481;
+      #cssBlock.pz-heading
+        h2
+          | &#21306;&#22359;
+          small pz-block&comma; pz-block-header&comma; pz-block-content
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              code pz-block
+              | &#20165;&#21010;&#20998;&#19968;&#20010;&#21253;&#22260;&#21306;&#22495;&#65292;&#27809;&#26377;&#36793;&#26694;&#21644;&#32972;&#26223;
+              br
+              p Demo code &lpar;&#21491;&#20391;&#26159;&#26174;&#31034;&#25928;&#26524;&rpar;&colon;
+              pre.
+                \n<div class="pz-block">
+                    <div class="pz-block-header">
+                        这是block的标题 <span>附属说明</span>
+                    </div>
+                    <div class="pz-block-content">
+                        block内容
+                    </div>
+                </div>                
+        .pz-fluid-dual
+          .pz-block
+            .pz-block-header
+              | &#36825;&#26159;block&#30340;&#26631;&#39064;
+              span &#38468;&#23646;&#35828;&#26126;
+            .pz-block-content
+              | block&#20869;&#23481;
+      #cssTypesetting.pz-heading
+        h2
+          | &#25490;&#29256;
+          small h1 ~ h6&comma; p&comma; strong
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-header
+              | &#20869;&#23481;&#23637;&#31034;
+            .pz-box-content
+              h3 h3 &#22823;&#26631;&#39064; Lorem ipsum
+              p
+                | 4&#26376;27&#26085;&#28040;&#24687;&#65292;&#22312;&#36817;&#26399;&#25512;&#20986;&#30340;Android&#26071;&#33328;&#26426;&#22411;&#20013;&#65292;HTC One&#26080;&#30097;&#26159;&#19968;&#27454;&#24341;&#20154;&#27880;&#30446;&#30340;&#35774;&#22791;&#65292;&#26377;&#20154;&#38047;&#24847;&#20110;&#23427;&#31934;&#33391;&#30340;&#35774;&#35745;&#65292;
+                strong &#20063;&#26377;&#20154;&#24576;&#30097;&#25152;&#35859;Ultrapixel&#25216;&#26415;&#23454;&#38469;&#30340;&#25293;&#25668;&#24615;&#33021;
+                | &#12290;&#26085;&#21069;&#65292;&#31185;&#25216;&#32593;&#31449;Pocket- lint&#23601;&#23545;HTC One&#22312;&#23454;&#38469;&#20351;&#29992;&#20013;&#30340;&#25293;&#25668;&#24615;&#33021;&#36827;&#34892;&#20102;&#27979;&#35797;&#12290;
+              p
+                | Lorem ipsum dolor sit amet&comma;
+                strong consectetur adipisicing elit
+                | &comma; sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&period; Ut enim ad minim veniam&comma; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat&period; Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur&period; Excepteur sint occaecat cupidatat non proident&comma; sunt in culpa qui officia deserunt mollit anim id est laborum
+        .pz-fluid-dual
+          h1
+            | h1 &#36825;&#26159;&#26631;&#39064;&#65292;Lorem
+            small small &#23567;&#23383;ipsum
+          h2
+            | h2 &#36825;&#26159;&#26631;&#39064;&#65292;Lorem
+            small small &#23567;&#23383;ipsum
+          h3
+            | h3 &#36825;&#26159;&#26631;&#39064;&#65292;Lorem
+            small small &#23567;&#23383;ipsum
+          h4
+            | h4 &#36825;&#26159;&#26631;&#39064;&#65292;Lorem
+            small small &#23567;&#23383;ipsum
+          h5
+            | h5 &#36825;&#26159;&#26631;&#39064;&#65292;Lorem
+            small small &#23567;&#23383;ipsum
+          h6
+            | h6 &#36825;&#26159;&#26631;&#39064;&#65292;Lorem
+            small small &#23567;&#23383;ipsum
+      #cssTable.pz-heading
+        h2
+          | &#34920;&#26684;
+          small pz-table
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-header
+              | Table&#30340;&#26631;&#39064;
+              span &#38468;&#23646;&#35828;&#26126;
+            table.pz-table(border='0', cellspacing='0', cellpadding='0')
+              tr
+                th &num;
+                th &#22995;&#21517;
+                th &#24615;&#21035;
+                th &#24180;&#40836;
+                th &#25805;&#20316;
+              tr
+                td 1
+                td &#26446;&#38647;
+                td &#30007;
+                td 14
+                td
+                  .pz-btn-group
+                    a.pz-btn(href='javascript:;', title='查看')
+                      i.icon-search
+                    a.pz-btn(href='javascript:;', title='删除')
+                      i.icon-remove
+              tr
+                td 2
+                td &#38889;&#26757;&#26757;
+                td &#22899;
+                td 13
+                td
+                  .pz-btn-group
+                    a.pz-btn(href='javascript:;', title='查看')
+                      i.icon-search
+                    a.pz-btn(href='javascript:;', title='删除')
+                      i.icon-remove
+              tr
+                td 3
+                td Jim
+                td &#30007;
+                td 14
+                td
+                  .pz-btn-group
+                    a.pz-btn(href='javascript:;', title='查看')
+                      i.icon-search
+                    a.pz-btn(href='javascript:;', title='删除')
+                      i.icon-remove
+              tr
+                td 4
+                td Lucy
+                td &#22899;
+                td 13
+                td
+                  .pz-btn-group
+                    a.pz-btn(href='javascript:;', title='查看')
+                      i.icon-search
+                    a.pz-btn(href='javascript:;', title='删除')
+                      i.icon-remove
+              tr
+                td 5
+                td Lily
+                td &#22899;
+                td 13
+                td
+                  .pz-btn-group
+                    a.pz-btn(href='javascript:;', title='查看')
+                      i.icon-search
+                    a.pz-btn.pz-btn-danger(href='javascript:;', title='删除')
+                      i.icon-remove
+              tr
+                td 6
+                td &#26519;&#28059;
+                td &#30007;
+                td 13
+                td
+                  .pz-btn-group
+                    a.pz-btn(href='javascript:;', title='查看')
+                      i.icon-search
+                    a.pz-btn(href='javascript:;', title='删除')
+                      i.icon-remove
+              tr
+                td 7
+                td Uncle Wang
+                td &#30007;
+                td 40
+                td
+                  .pz-btn-group
+                    a.pz-btn(href='javascript:;', title='查看')
+                      i.icon-search
+                    a.pz-btn(href='javascript:;', title='删除')
+                      i.icon-remove
+              tr
+                td 8
+                td &#39640;&#24935;
+                td &#22899;
+                td 26
+                td
+                  .pz-btn-group
+                    a.pz-btn(href='javascript:;', title='查看')
+                      i.icon-search
+                    a.pz-btn(href='javascript:;', title='删除')
+                      i.icon-remove
+              tr
+                td 9
+                td Polly
+                td n&sol;a
+                td 1
+                td
+                  .pz-btn-group
+                    a.pz-btn(href='javascript:;', title='查看')
+                      i.icon-search
+                    a.pz-btn(href='javascript:;', title='删除')
+                      i.icon-remove
+              tr
+                td 10
+                td Lady GaGa
+                td &quest;
+                td &quest;
+                td
+                  .pz-btn-group
+                    a.pz-btn(href='javascript:;', title='查看')
+                      i.icon-search
+                    a.pz-btn(href='javascript:;', title='删除')
+                      i.icon-remove
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content(style='height:360px; width:95%; overflow:auto;')
+              pre.
+                \n<div class="pz-box">
+                    <div class="pz-box-header">
+                        Table的标题 <span>附属说明</span>
+                    </div>
+                    <table class="pz-table" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th>#</th>
+                            <th>姓名</th>
+                            <th>性别</th>
+                            <th>年龄</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>李雷</td>
+                            <td>男</td>
+                            <td>14</td>
+                            <td>
+                                <div class="pz-btn-group">
+                                    <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                                    <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>韩梅梅</td>
+                            <td>女</td>
+                            <td>13</td>
+                            <td>
+                                <div class="pz-btn-group">
+                                    <a href="javascript:;" class="pz-btn" title="查看"><i class="icon-search"></i></a>
+                                    <a href="javascript:;" class="pz-btn" title="删除"><i class="icon-remove"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        ......
+                    </table>
+                </div>                
+      .pz-heading
+        h3
+          | &#24102;&#36793;&#26694;&#32447;&#30340;&#34920;&#26684;
+          small pz-table pz-border-table
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-header
+              | Table&#30340;&#26631;&#39064;
+              span &#38468;&#23646;&#35828;&#26126;
+            table.pz-table.pz-border-table(border='0', cellspacing='0', cellpadding='0')
+              tr
+                th &num;
+                th &#22995;&#21517;
+                th &#24615;&#21035;
+                th &#24180;&#40836;
+              tr
+                td 1
+                td &#26446;&#38647;
+                td &#30007;
+                td 14
+              tr
+                td 2
+                td &#38889;&#26757;&#26757;
+                td &#22899;
+                td 13
+              tr
+                td 3
+                td Jim
+                td &#30007;
+                td 14
+              tr
+                td 4
+                td Lucy
+                td &#22899;
+                td 13
+              tr
+                td 5
+                td Lily
+                td &#22899;
+                td 13
+              tr
+                td 6
+                td &#26519;&#28059;
+                td &#30007;
+                td 13
+              tr
+                td 7
+                td Uncle Wang
+                td &#30007;
+                td 40
+              tr
+                td 8
+                td &#39640;&#24935;
+                td &#22899;
+                td 26
+              tr
+                td 9
+                td Polly
+                td n&sol;a
+                td 1
+              tr
+                td 10
+                td Lady GaGa
+                td &quest;
+                td &quest;
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content(style='height:360px; width:95%; overflow:auto;')
+              pre.
+                \n<div class="pz-box">
+                    <div class="pz-box-header">
+                        Table的标题 <span>附属说明</span>
+                    </div>
+                    <table class="pz-table pz-border-table" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th>#</th>
+                            <th>姓名</th>
+                            <th>性别</th>
+                            <th>年龄</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>李雷</td>
+                            <td>男</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>韩梅梅</td>
+                            <td>女</td>
+                            <td>13</td>
+                        </tr>
+                        ......
+                    </table>
+                </div>                
+      .pz-heading
+        h3
+          | &#32039;&#20945;&#30340;&#34920;&#26684;
+          small pz-table pz-compact-table
+      .pz-box
+        .pz-box-header
+          | Table&#30340;&#26631;&#39064;
+          span &#38468;&#23646;&#35828;&#26126;
+        table.pz-table.pz-compact-table(border='0', cellspacing='0', cellpadding='0')
+          tr
+            th &num;
+            th &#22995;&#21517;
+            th &#24615;&#21035;
+            th &#24180;&#40836;
+            th &#25805;&#20316;
+          tr
+            td 1
+            td &#26446;&#38647;
+            td &#30007;
+            td 14
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn(href='javascript:;', title='删除')
+                  i.icon-remove
+          tr
+            td 2
+            td &#38889;&#26757;&#26757;
+            td &#22899;
+            td 13
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn(href='javascript:;', title='删除')
+                  i.icon-remove
+          tr
+            td 3
+            td Jim
+            td &#30007;
+            td 14
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn(href='javascript:;', title='删除')
+                  i.icon-remove
+          tr
+            td 4
+            td Lucy
+            td &#22899;
+            td 13
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn(href='javascript:;', title='删除')
+                  i.icon-remove
+          tr
+            td 5
+            td Lily
+            td &#22899;
+            td 13
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn(href='javascript:;', title='删除')
+                  i.icon-remove
+          tr
+            td 6
+            td &#26519;&#28059;
+            td &#30007;
+            td 13
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn(href='javascript:;', title='删除')
+                  i.icon-remove
+          tr
+            td 7
+            td Uncle Wang
+            td &#30007;
+            td 40
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn(href='javascript:;', title='删除')
+                  i.icon-remove
+          tr
+            td 8
+            td &#39640;&#24935;
+            td &#22899;
+            td 26
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn(href='javascript:;', title='删除')
+                  i.icon-remove
+          tr
+            td 9
+            td Polly
+            td n&sol;a
+            td 1
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn(href='javascript:;', title='删除')
+                  i.icon-remove
+          tr
+            td 10
+            td Lady GaGa
+            td &quest;
+            td &quest;
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn(href='javascript:;', title='删除')
+                  i.icon-remove
+      #cssPager.pz-heading
+        h2
+          | &#32763;&#39029;&#31867;
+          small pz-pagination&comma; pz-pager
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-header
+              | Table&#30340;&#26631;&#39064;
+              span &#38468;&#23646;&#35828;&#26126;
+            .pz-box-content.clearfix
+              .pz-pagination
+                a(href='javascript:;') &#39318;&#39029;
+                a(href='javascript:;') 1
+                a(href='javascript:;') 2
+                span 3
+                a(href='javascript:;') 4
+                a(href='javascript:;') 5
+                a(href='javascript:;') &#26411;&#39029;
+              .pz-pagination.pz-right
+                a(href='javascript:;') &#21491;&#28014;&#21160;
+                a(href='javascript:;') 1
+                a(href='javascript:;') 2
+                span 3
+                a(href='javascript:;') 4
+                a(href='javascript:;') 5
+                a(href='javascript:;') &#26411;&#39029;
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              | &#32763;&#39029;&#31867;&#30340; a &#26631;&#31614;&#21644; span &#26631;&#31614;&#20043;&#38388;&#19981;&#33021;&#26377;
+              code &#31354;&#26684;
+              | &#25110;
+              code &#25442;&#34892;&#31526;
+              | &#65292;&#21542;&#21017;&#20250;&#20986;&#29616;&#24456;&#19985;&#30340;&#32541;&#38553;&#65281;
+              br
+              | a &#26631;&#31614;&#34920;&#31034;&#27599;&#39029;&#30340;&#38142;&#25509;&#65292; span &#26631;&#31614;&#26159;&#24403;&#21069;&#39029;&#38754;&#65288;&#19981;&#21487;&#28857;&#20987;&#65289;
+      #cssForm.pz-heading
+        h2
+          | &#34920;&#21333;
+          small pz-form
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-header
+              | Form&#30340;&#26631;&#39064;
+              span &#38468;&#23646;&#35828;&#26126;
+            .pz-form
+              .pz-form-row
+                .pz-form-label &#21517;&#23383;
+                .pz-form-input
+                  input.pz-form-text(type='text', name='name')
+                  span.pz-form-hint &#36825;&#26159;&#25552;&#31034; pz-form-hint
+              .pz-form-row
+                .pz-form-label Pwd
+                .pz-form-input
+                  input.pz-form-password(type='password', name='pwd')
+                  i.pz-form-required.icon-pencil(title='必填')
+                  span.pz-form-hint &#24517;&#22635;&#21834;
+              .pz-form-row
+                .pz-form-label &#29366;&#24577;Status
+                .pz-form-input
+                  select#status.pz-form-select(name='status')
+                    option(value='') &#35831;&#36873;&#25321;
+                    option(value='1') &#24320;&#21551;
+                    option(value='2') &#26242;&#20572;
+                    option(value='3') &#20013;&#25351;
+                  i.pz-form-required.icon-pencil(title='必填')
+              .pz-form-row
+                .pz-form-label &#30003;&#35831;&#29702;&#30001;
+                .pz-form-input
+                  textarea#reason.pz-form-textarea(name='reason')
+                  i.pz-form-required.icon-pencil(title='必填')
+                  span.pz-form-hint &#19981;&#23569;&#20110;800&#23383;
+              .pz-form-gap
+              .pz-form-row
+                .pz-form-label &#24615;&#21035;
+                .pz-form-input
+                  input#sex1.pz-form-radio(type='radio', name='sex')
+                  label(for='sex1') &#30007;
+                  input#sex2.pz-form-radio(type='radio', name='sex')
+                  label(for='sex2') &#22899;
+                  input#sex3.pz-form-radio(type='radio', name='sex')
+                  label(for='sex3') &#27809;&#19969;&#19969;
+              .pz-form-row
+                .pz-form-label &#24615;&#21462;&#21521;
+                .pz-form-input
+                  input#sexto1.pz-form-checkbox(type='checkbox', name='sexto')
+                  label(for='sexto1') &#30007;
+                  input#sexto2.pz-form-checkbox(type='checkbox', name='sexto')
+                  label(for='sexto2') &#22899;
+                  input#sexto3.pz-form-checkbox(type='checkbox', name='sexto')
+                  label(for='sexto3') &#21160;&#29289;&quest;&excl;
+              .pz-form-row
+                .pz-form-label &#19978;&#20256;&#29031;&#29255;
+                .pz-form-input
+                  input#upfile.pz-form-file(type='file', name='upfile')
+              .pz-form-gap
+              .pz-form-footer
+                input.pz-btn(type='button', value='取消')
+                input.pz-btn.pz-btn-danger(type='submit', value='提交数据')
+                input.pz-btn.pz-btn-submit(type='submit', value='先预览')
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              | &#20351;&#29992;
+              code div class&equals;&quot;pz-form&quot;
+              | &#20570;&#20026;&#22806;&#26694;&#21253;&#22260;&#20320;&#30340;&#34920;&#21333;
+              br
+              | &#27599;&#19968;&#34892;&#29992;
+              code div class&equals;&quot;pz-form-row&quot;
+              | &#21253;&#22260;
+              br
+              | &#27599;&#34892;&#26631;&#31614;&#20351;&#29992;
+              code div class&equals;&quot;pz-form-label&quot;
+              | &#21253;&#22260;
+              br
+              | &#34920;&#21333;&#36755;&#20837;&#20869;&#23481;&#20351;&#29992;
+              code div class&equals;&quot;pz-form-input&quot;
+              | &#21253;&#22260;
+              br
+              | &#34920;&#21333;&#25552;&#20132;&#25353;&#38062;&#35831;&#21253;&#22260;&#21040;
+              code div class&equals;&quot;pz-form-footer&quot;
+              | &#23481;&#22120;&#20869;
+              br
+              | &#34920;&#21333;&#20803;&#32032;class&colon;
+              code pz-form-text
+              | &comma;
+              code pz-form-password
+              | &comma;
+              code pz-form-select
+              | &comma;
+              code pz-form-radio
+              | &comma;
+              code pz-form-checkbox
+              | &comma;
+              code pz-form-textarea
+              | &comma;
+              code pz-form-file
+              br
+              | &#34920;&#21333;&#25552;&#31034;&colon;
+              code &lt;span class&equals;&quot;pz-form-hint&quot;&gt;&lt;&sol;span&gt;
+              br
+              | &#24517;&#22635;&#39033;&colon;
+              code &lt;i class&equals;&quot;pz-form-required icon-pencil&quot; title&equals;&quot;&#24517;&#22635;&quot;&gt;&lt;&sol;i&gt;
+              br
+      #cssButton.pz-heading
+        h2
+          | &#25353;&#38062;
+          small pz-btn&comma; pz-small-btn&comma; pz-big-btn
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              a.pz-btn(href='javascript:;') &#26222;&#36890;
+              | pz-btn
+              br
+              br
+              a.pz-btn.pz-btn-submit(href='javascript:;') &#25552;&#20132;
+              | pz-btn pz-btn-submit
+              br
+              br
+              a.pz-btn.pz-btn-danger(href='javascript:;') &#21361;&#38505;
+              | pz-btn pz-btn-danger
+              br
+              br
+              a.pz-btn.pz-btn-reverse(href='javascript:;') &#21453;&#33394;
+              | pz-btn pz-btn-reverse
+              br
+              br
+              a.pz-btn.pz-btn-warning(href='javascript:;') &#35686;&#21578;
+              | pz-btn pz-btn-warning
+              br
+              br
+              a.pz-btn.pz-btn-success(href='javascript:;') &#25104;&#21151;&excl;
+              | pz-btn pz-btn-success
+              br
+              br
+              a.pz-btn.pz-btn-info(href='javascript:;') &#20449;&#24687;
+              | pz-btn pz-btn-info
+              br
+              br
+              a.pz-btn.pz-btn-disabled(href='javascript:;') &#34987;&#31105;&#29992;
+              | pz-btn pz-btn-disabled
+              br
+              br
+              a.pz-btn.pz-btn-success(href='javascript:;')
+                i.icon-ok-sign
+                | &#24102;&#22270;&#26631;&#25353;&#38062;
+              | &lt; &period;&period;&period;&gt;&lt;i class&equals;&quot;icon-ok-sign&quot;&gt;&lt;&sol;i&gt; &#25991;&#23383;&lt;&sol;a&gt;
+              br
+              br
+              a.pz-btn.pz-big-btn.pz-btn-submit(href='javascript:;')
+                i.icon-envelope.big-icon
+                br
+                | &#22823;&#25353;&#38062;
+              | pz-btn pz-big-btn pz-btn-submit
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              | input &#21644; a &#26631;&#31614;&#37117;&#21487;&#20197;&#20570;&#25104;&#25353;&#38062;&#26679;&#24335;&#65292;&#19981;&#24314;&#35758;&#20351;&#29992; button &#26631;&#31614;&#65288;&#32769;&#27983;&#35272;&#22120;&#26377;&#20860;&#23481;&#38382;&#39064;&#65289;
+              br
+              br
+              code &#22823;&#25353;&#38062;
+              | &#24517;&#39035;&#38468;&#24102;&#19968;&#20010;
+              code &#22823;&#22270;&#26631;
+              | &#65292;&#20026;&#25353;&#38062;&#20869;&#37096;
+              code &lt;i&gt; &#26631;&#31614;
+              | &#22686;&#21152;&#19968;&#20010;
+              code big-icon
+              | class&#21363;&#21487;&#21464;&#20986;&#22823;&#22270;&#26631;
+      #cssIcon.pz-heading
+        h2
+          | &#22270;&#26631;
+          small icon-xxx&comma; big-icon
+      .pz-box
+        .pz-box-content
+          code &lt;i class&equals;&quot;icon-glass&quot;&gt;&lt;&sol;i&gt;
+          | &#25104;&#29983;&#22270;&#26631;&colon;
+          i.icon-glass
+          br
+          | &#22270;&#26631;&#25903;&#25345;&#22810;&#39068;&#33394;&#22810;&#23610;&#23544;&#65292;&#21482;&#38656;&#35774;&#32622;style&colon; font-color&colon;&num;xxx&comma; font-size&colon;xxpx
+      style(type='text/css')
+        .box1 {
+        font-size: 18px;
+        display: inline-block;
+        width: 28%;
+        padding: .25em .5em;
+        background: #eee;
+        margin: .5em .5em .5em 0;
+        }
+      .pz-heading
+        h3 &#22270;&#26631;&#19968;&#35272;
+      .pz-box.clearfix
+        .pz-box-content
+          span.box1
+            i.icon-glass
+            | icon-glass
+          span.box1
+            i.icon-music
+            | icon-music
+          span.box1
+            i.icon-search
+            | icon-search
+          span.box1
+            i.icon-envelope
+            | icon-envelope
+          span.box1
+            i.icon-heart
+            | icon-heart
+          span.box1
+            i.icon-star
+            | icon-star
+          span.box1
+            i.icon-star-empty
+            | icon-star-empty
+          span.box1
+            i.icon-user
+            | icon-user
+          span.box1
+            i.icon-film
+            | icon-film
+          span.box1
+            i.icon-th-large
+            | icon-th-large
+          span.box1
+            i.icon-th
+            | icon-th
+          span.box1
+            i.icon-th-list
+            | icon-th-list
+          span.box1
+            i.icon-ok
+            | icon-ok
+          span.box1
+            i.icon-remove
+            | icon-remove
+          span.box1
+            i.icon-zoom-in
+            | icon-zoom-in
+          span.box1
+            i.icon-zoom-out
+            | icon-zoom-out
+          span.box1
+            i.icon-off
+            | icon-off
+          span.box1
+            i.icon-signal
+            | icon-signal
+          span.box1
+            i.icon-cog
+            | icon-cog
+          span.box1
+            i.icon-trash
+            | icon-trash
+          span.box1
+            i.icon-home
+            | icon-home
+          span.box1
+            i.icon-file
+            | icon-file
+          span.box1
+            i.icon-time
+            | icon-time
+          span.box1
+            i.icon-road
+            | icon-road
+          span.box1
+            i.icon-download-alt
+            | icon-download-alt
+          span.box1
+            i.icon-download
+            | icon-download
+          span.box1
+            i.icon-upload
+            | icon-upload
+          span.box1
+            i.icon-inbox
+            | icon-inbox
+          span.box1
+            i.icon-play-circle
+            | icon-play-circle
+          span.box1
+            i.icon-repeat
+            | icon-repeat
+          span.box1
+            i.icon-refresh
+            | icon-refresh
+          span.box1
+            i.icon-list-alt
+            | icon-list-alt
+          span.box1
+            i.icon-lock
+            | icon-lock
+          span.box1
+            i.icon-flag
+            | icon-flag
+          span.box1
+            i.icon-headphones
+            | icon-headphones
+          span.box1
+            i.icon-volume-off
+            | icon-volume-off
+          span.box1
+            i.icon-volume-down
+            | icon-volume-down
+          span.box1
+            i.icon-volume-up
+            | icon-volume-up
+          span.box1
+            i.icon-qrcode
+            | icon-qrcode
+          span.box1
+            i.icon-barcode
+            | icon-barcode
+          span.box1
+            i.icon-tag
+            | icon-tag
+          span.box1
+            i.icon-tags
+            | icon-tags
+          span.box1
+            i.icon-book
+            | icon-book
+          span.box1
+            i.icon-bookmark
+            | icon-bookmark
+          span.box1
+            i.icon-print
+            | icon-print
+          span.box1
+            i.icon-camera
+            | icon-camera
+          span.box1
+            i.icon-font
+            | icon-font
+          span.box1
+            i.icon-bold
+            | icon-bold
+          span.box1
+            i.icon-italic
+            | icon-italic
+          span.box1
+            i.icon-text-height
+            | icon-text-height
+          span.box1
+            i.icon-text-width
+            | icon-text-width
+          span.box1
+            i.icon-align-left
+            | icon-align-left
+          span.box1
+            i.icon-align-center
+            | icon-align-center
+          span.box1
+            i.icon-align-right
+            | icon-align-right
+          span.box1
+            i.icon-align-justify
+            | icon-align-justify
+          span.box1
+            i.icon-list
+            | icon-list
+          span.box1
+            i.icon-indent-left
+            | icon-indent-left
+          span.box1
+            i.icon-indent-right
+            | icon-indent-right
+          span.box1
+            i.icon-facetime-video
+            | icon-facetime-video
+          span.box1
+            i.icon-picture
+            | icon-picture
+          span.box1
+            i.icon-pencil
+            | icon-pencil
+          span.box1
+            i.icon-map-marker
+            | icon-map-marker
+          span.box1
+            i.icon-adjust
+            | icon-adjust
+          span.box1
+            i.icon-tint
+            | icon-tint
+          span.box1
+            i.icon-edit
+            | icon-edit
+          span.box1
+            i.icon-share
+            | icon-share
+          span.box1
+            i.icon-check
+            | icon-check
+          span.box1
+            i.icon-move
+            | icon-move
+          span.box1
+            i.icon-step-backward
+            | icon-step-backward
+          span.box1
+            i.icon-fast-backward
+            | icon-fast-backward
+          span.box1
+            i.icon-backward
+            | icon-backward
+          span.box1
+            i.icon-play
+            | icon-play
+          span.box1
+            i.icon-pause
+            | icon-pause
+          span.box1
+            i.icon-stop
+            | icon-stop
+          span.box1
+            i.icon-forward
+            | icon-forward
+          span.box1
+            i.icon-fast-forward
+            | icon-fast-forward
+          span.box1
+            i.icon-step-forward
+            | icon-step-forward
+          span.box1
+            i.icon-eject
+            | icon-eject
+          span.box1
+            i.icon-chevron-left
+            | icon-chevron-left
+          span.box1
+            i.icon-chevron-right
+            | icon-chevron-right
+          span.box1
+            i.icon-plus-sign
+            | icon-plus-sign
+          span.box1
+            i.icon-minus-sign
+            | icon-minus-sign
+          span.box1
+            i.icon-remove-sign
+            | icon-remove-sign
+          span.box1
+            i.icon-ok-sign
+            | icon-ok-sign
+          span.box1
+            i.icon-question-sign
+            | icon-question-sign
+          span.box1
+            i.icon-info-sign
+            | icon-info-sign
+          span.box1
+            i.icon-screenshot
+            | icon-screenshot
+          span.box1
+            i.icon-remove-circle
+            | icon-remove-circle
+          span.box1
+            i.icon-ok-circle
+            | icon-ok-circle
+          span.box1
+            i.icon-ban-circle
+            | icon-ban-circle
+          span.box1
+            i.icon-arrow-left
+            | icon-arrow-left
+          span.box1
+            i.icon-arrow-right
+            | icon-arrow-right
+          span.box1
+            i.icon-arrow-up
+            | icon-arrow-up
+          span.box1
+            i.icon-arrow-down
+            | icon-arrow-down
+          span.box1
+            i.icon-share-alt
+            | icon-share-alt
+          span.box1
+            i.icon-resize-full
+            | icon-resize-full
+          span.box1
+            i.icon-resize-small
+            | icon-resize-small
+          span.box1
+            i.icon-plus
+            | icon-plus
+          span.box1
+            i.icon-minus
+            | icon-minus
+          span.box1
+            i.icon-asterisk
+            | icon-asterisk
+          span.box1
+            i.icon-exclamation-sign
+            | icon-exclamation-sign
+          span.box1
+            i.icon-gift
+            | icon-gift
+          span.box1
+            i.icon-leaf
+            | icon-leaf
+          span.box1
+            i.icon-fire
+            | icon-fire
+          span.box1
+            i.icon-eye-open
+            | icon-eye-open
+          span.box1
+            i.icon-eye-close
+            | icon-eye-close
+          span.box1
+            i.icon-warning-sign
+            | icon-warning-sign
+          span.box1
+            i.icon-plane
+            | icon-plane
+          span.box1
+            i.icon-calendar
+            | icon-calendar
+          span.box1
+            i.icon-random
+            | icon-random
+          span.box1
+            i.icon-comment
+            | icon-comment
+          span.box1
+            i.icon-magnet
+            | icon-magnet
+          span.box1
+            i.icon-chevron-up
+            | icon-chevron-up
+          span.box1
+            i.icon-chevron-down
+            | icon-chevron-down
+          span.box1
+            i.icon-retweet
+            | icon-retweet
+          span.box1
+            i.icon-shopping-cart
+            | icon-shopping-cart
+          span.box1
+            i.icon-folder-close
+            | icon-folder-close
+          span.box1
+            i.icon-folder-open
+            | icon-folder-open
+          span.box1
+            i.icon-resize-vertical
+            | icon-resize-vertical
+          span.box1
+            i.icon-resize-horizontal
+            | icon-resize-horizontal
+          span.box1
+            i.icon-bar-chart
+            | icon-bar-chart
+          span.box1
+            i.icon-twitter-sign
+            | icon-twitter-sign
+          span.box1
+            i.icon-facebook-sign
+            | icon-facebook-sign
+          span.box1
+            i.icon-camera-retro
+            | icon-camera-retro
+          span.box1
+            i.icon-key
+            | icon-key
+          span.box1
+            i.icon-cogs
+            | icon-cogs
+          span.box1
+            i.icon-comments
+            | icon-comments
+          span.box1
+            i.icon-thumbs-up
+            | icon-thumbs-up
+          span.box1
+            i.icon-thumbs-down
+            | icon-thumbs-down
+          span.box1
+            i.icon-star-half
+            | icon-star-half
+          span.box1
+            i.icon-heart-empty
+            | icon-heart-empty
+          span.box1
+            i.icon-signout
+            | icon-signout
+          span.box1
+            i.icon-linkedin-sign
+            | icon-linkedin-sign
+          span.box1
+            i.icon-pushpin
+            | icon-pushpin
+          span.box1
+            i.icon-external-link
+            | icon-external-link
+          span.box1
+            i.icon-signin
+            | icon-signin
+          span.box1
+            i.icon-trophy
+            | icon-trophy
+          span.box1
+            i.icon-github-sign
+            | icon-github-sign
+          span.box1
+            i.icon-upload-alt
+            | icon-upload-alt
+          span.box1
+            i.icon-lemon
+            | icon-lemon
+          span.box1
+            i.icon-phone
+            | icon-phone
+          span.box1
+            i.icon-check-empty
+            | icon-check-empty
+          span.box1
+            i.icon-bookmark-empty
+            | icon-bookmark-empty
+          span.box1
+            i.icon-phone-sign
+            | icon-phone-sign
+          span.box1
+            i.icon-twitter
+            | icon-twitter
+          span.box1
+            i.icon-facebook
+            | icon-facebook
+          span.box1
+            i.icon-github
+            | icon-github
+          span.box1
+            i.icon-unlock
+            | icon-unlock
+          span.box1
+            i.icon-credit
+            | icon-credit
+          span.box1
+            i.icon-rss
+            | icon-rss
+          span.box1
+            i.icon-hdd
+            | icon-hdd
+          span.box1
+            i.icon-bullhorn
+            | icon-bullhorn
+          span.box1
+            i.icon-bell
+            | icon-bell
+          span.box1
+            i.icon-certificate
+            | icon-certificate
+          span.box1
+            i.icon-hand-right
+            | icon-hand-right
+          span.box1
+            i.icon-hand-left
+            | icon-hand-left
+          span.box1
+            i.icon-hand-up
+            | icon-hand-up
+          span.box1
+            i.icon-hand-down
+            | icon-hand-down
+          span.box1
+            i.icon-circle-arrow-left
+            | icon-circle-arrow-left
+          span.box1
+            i.icon-circle-arrow-right
+            | icon-circle-arrow-right
+          span.box1
+            i.icon-circle-arrow-up
+            | icon-circle-arrow-up
+          span.box1
+            i.icon-circle-arrow-down
+            | icon-circle-arrow-down
+          span.box1
+            i.icon-globe
+            | icon-globe
+          span.box1
+            i.icon-wrench
+            | icon-wrench
+          span.box1
+            i.icon-tasks
+            | icon-tasks
+          span.box1
+            i.icon-filter
+            | icon-filter
+          span.box1
+            i.icon-briefcase
+            | icon-briefcase
+          span.box1
+            i.icon-fullscreen
+            | icon-fullscreen
+          span.box1
+            i.icon-group
+            | icon-group
+          span.box1
+            i.icon-link
+            | icon-link
+          span.box1
+            i.icon-cloud
+            | icon-cloud
+          span.box1
+            i.icon-beaker
+            | icon-beaker
+          span.box1
+            i.icon-cut
+            | icon-cut
+          span.box1
+            i.icon-copy
+            | icon-copy
+          span.box1
+            i.icon-paper-clip
+            | icon-paper-clip
+          span.box1
+            i.icon-save
+            | icon-save
+          span.box1
+            i.icon-sign-blank
+            | icon-sign-blank
+          span.box1
+            i.icon-reorder
+            | icon-reorder
+          span.box1
+            i.icon-list-ul
+            | icon-list-ul
+          span.box1
+            i.icon-list-ol
+            | icon-list-ol
+          span.box1
+            i.icon-strikethrough
+            | icon-strikethrough
+          span.box1
+            i.icon-underline
+            | icon-underline
+          span.box1
+            i.icon-table
+            | icon-table
+          span.box1
+            i.icon-magic
+            | icon-magic
+          span.box1
+            i.icon-truck
+            | icon-truck
+          span.box1
+            i.icon-pinterest
+            | icon-pinterest
+          span.box1
+            i.icon-pinterest-sign
+            | icon-pinterest-sign
+          span.box1
+            i.icon-google-plus-sign
+            | icon-google-plus-sign
+          span.box1
+            i.icon-google-plus
+            | icon-google-plus
+          span.box1
+            i.icon-money
+            | icon-money
+          span.box1
+            i.icon-caret-down
+            | icon-caret-down
+          span.box1
+            i.icon-caret-up
+            | icon-caret-up
+          span.box1
+            i.icon-caret-left
+            | icon-caret-left
+          span.box1
+            i.icon-caret-right
+            | icon-caret-right
+          span.box1
+            i.icon-columns
+            | icon-columns
+          span.box1
+            i.icon-sort
+            | icon-sort
+          span.box1
+            i.icon-sort-down
+            | icon-sort-down
+          span.box1
+            i.icon-sort-up
+            | icon-sort-up
+          span.box1
+            i.icon-envelope-alt
+            | icon-envelope-alt
+          span.box1
+            i.icon-undo
+            | icon-undo
+          span.box1
+            i.icon-legal
+            | icon-legal
+          span.box1
+            i.icon-dashboard
+            | icon-dashboard
+          span.box1
+            i.icon-comment-alt
+            | icon-comment-alt
+          span.box1
+            i.icon-comments-alt
+            | icon-comments-alt
+          span.box1
+            i.icon-bolt
+            | icon-bolt
+          span.box1
+            i.icon-sitemap
+            | icon-sitemap
+          span.box1
+            i.icon-umbrella
+            | icon-umbrella
+          span.box1
+            i.icon-paste
+            | icon-paste
+          span.box1
+            i.icon-lightbulb
+            | icon-lightbulb
+          span.box1
+            i.icon-exchange
+            | icon-exchange
+          span.box1
+            i.icon-cloud-download
+            | icon-cloud-download
+          span.box1
+            i.icon-cloud-upload
+            | icon-cloud-upload
+          span.box1
+            i.icon-user-md
+            | icon-user-md
+          span.box1
+            i.icon-stethoscope
+            | icon-stethoscope
+          span.box1
+            i.icon-suitcase
+            | icon-suitcase
+          span.box1
+            i.icon-bell-alt
+            | icon-bell-alt
+          span.box1
+            i.icon-coffee
+            | icon-coffee
+          span.box1
+            i.icon-food
+            | icon-food
+          span.box1
+            i.icon-file-alt
+            | icon-file-alt
+          span.box1
+            i.icon-building
+            | icon-building
+          span.box1
+            i.icon-hospital
+            | icon-hospital
+          span.box1
+            i.icon-ambulance
+            | icon-ambulance
+          span.box1
+            i.icon-medkit
+            | icon-medkit
+          span.box1
+            i.icon-fighter-jet
+            | icon-fighter-jet
+          span.box1
+            i.icon-beer
+            | icon-beer
+          span.box1
+            i.icon-h-sign
+            | icon-h-sign
+          span.box1
+            i.icon-plus-sign-2
+            | icon-plus-sign-2
+          span.box1
+            i.icon-double-angle-left
+            | icon-double-angle-left
+          span.box1
+            i.icon-double-angle-right
+            | icon-double-angle-right
+          span.box1
+            i.icon-double-angle-up
+            | icon-double-angle-up
+          span.box1
+            i.icon-double-angle-down
+            | icon-double-angle-down
+          span.box1
+            i.icon-angle-left
+            | icon-angle-left
+          span.box1
+            i.icon-angle-right
+            | icon-angle-right
+          span.box1
+            i.icon-angle-up
+            | icon-angle-up
+          span.box1
+            i.icon-angle-down
+            | icon-angle-down
+          span.box1
+            i.icon-desktop
+            | icon-desktop
+          span.box1
+            i.icon-laptop
+            | icon-laptop
+          span.box1
+            i.icon-tablet
+            | icon-tablet
+          span.box1
+            i.icon-mobile
+            | icon-mobile
+          span.box1
+            i.icon-circle-blank
+            | icon-circle-blank
+          span.box1
+            i.icon-quote-left
+            | icon-quote-left
+          span.box1
+            i.icon-quote-right
+            | icon-quote-right
+          span.box1
+            i.icon-spinner
+            | icon-spinner
+          span.box1
+            i.icon-circle
+            | icon-circle
+          span.box1
+            i.icon-reply
+            | icon-reply
+          span.box1
+            i.icon-github-alt
+            | icon-github-alt
+          span.box1
+            i.icon-folder-close-alt
+            | icon-folder-close-alt
+          span.box1
+            i.icon-folder-open-alt
+            | icon-folder-open-alt
+          span.box1
+            i.icon-linkedin
+            | icon-linkedin
+    // end of pz-wrapper

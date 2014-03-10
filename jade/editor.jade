@@ -1,0 +1,147 @@
+doctype html
+html(lang='zh-CN')
+  head
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    title Azzip admin &#20856;&#22411;&#39029;&#38754;&colon;&#32534;&#36753;&#22120;
+    link(href='assets/css/common.css?ver=1.01', type='text/css', rel='stylesheet')
+    link(href='assets/css/font.css?ver=1.01', type='text/css', rel='stylesheet')
+    link(href='assets/css/frame.css?ver=1.01', type='text/css', rel='stylesheet')
+    //if lt IE 8
+      script(type='text/javascript', src='assets/js/font.js')
+      script(defer='', type='text/javascript', src='assets/js/pngfix.js')
+    script(type='text/javascript', src='assets/js/jquery.js')
+    script(type='text/javascript', src='assets/js/jquery/calendar.js')
+    script(type='text/javascript', src='assets/js/jquery/tools.js')
+    script(type='text/javascript', src='assets/js/jquery/tools.js')
+    script(type='text/javascript', src='assets/js/frame.js')
+    script(type='text/javascript', src='assets/js/kindeditor/kindeditor.js')
+    link(rel='stylesheet', href='assets/js/kindeditor/themes/default/default.css')
+    script(charset='utf-8', src='assets/js/kindeditor/lang/zh_CN.js')
+    link(href='assets/css/vselect.css', type='text/css', rel='stylesheet')
+    script
+      KindEditor.lang({
+      example1 : '插入HTML'
+      });
+      KindEditor.plugin('example1', function(K) {
+      var self = this, name = 'example1';
+      self.clickToolbar(name, function() {
+      self.insertHtml('<strong>测试内容</strong>');
+      });
+      });
+      // 自定义插件 #2
+      KindEditor.lang({
+      example2 : 'CLASS样式'
+      });
+      KindEditor.plugin('example2', function(K) {
+      var self = this, name = 'example2';
+      function click(value) {
+      var cmd = self.cmd;
+      if (value === 'adv_strikethrough') {
+      cmd.wrap('<span style="background-color:#e53333;text-decoration:line-through;"></span>');
+      } else {
+      cmd.wrap('<span class="' + value + '"></span>');
+      }
+      cmd.select();
+      self.hideMenu();
+      }
+      self.clickToolbar(name, function() {
+      var menu = self.createMenu({
+      name : name,
+      width : 150
+      });
+      menu.addItem({
+      title : '红底白字',
+      click : function() {
+      click('red');
+      }
+      });
+      menu.addItem({
+      title : '绿底白字',
+      click : function() {
+      click('green');
+      }
+      });
+      menu.addItem({
+      title : '黄底白字',
+      click : function() {
+      click('yellow');
+      }
+      });
+      menu.addItem({
+      title : '自定义删除线',
+      click : function() {
+      click('adv_strikethrough');
+      }
+      });
+      });
+      });
+      var editor;
+      KindEditor.ready(function(K) {
+      editor = K.create('textarea[name="content1"]', {
+      allowFileManager : true
+      });
+      editor = K.create('textarea[name="content2"]', {
+      resizeType : 1,
+      allowPreviewEmoticons : false,
+      allowImageUpload : false,
+      items : [
+      'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+      'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+      'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+      });
+      editor = K.create('textarea[name="content3"]', {
+      filterMode : false
+      });
+      editor = K.create('textarea[name="content4"]', {
+      cssPath : ['assets/js/kindeditor/plugins/code/prettify.css', 'assets/js/kindeditor/examples/index.css'],
+      items : ['source', 'removeformat', 'example1', 'example2', 'code']
+      });
+      });
+  body
+    #pz-header.pz-header.pz-fix-top
+      h1 Azzip UI - &#20856;&#22411;&#39029;&#38754;&colon;&#32534;&#36753;&#22120;
+      a.pz-btn(href='#content1', rel='section-toggle') &#40664;&#35748;&#27169;&#24335;
+      a.pz-btn(href='#content2', rel='section-toggle') &#31616;&#21333;&#27169;&#24335;
+      a.pz-btn(href='#content3', rel='section-toggle') &#20851;&#38381;HTML&#36807;&#28388;
+      a.pz-btn(href='#content4', rel='section-toggle') &#33258;&#23450;&#20041;&#25554;&#20214;
+    #pz-shader.pz-shader.pz-fix-top
+    .pz-header-fix-space
+    .pz-wrapper
+      .pz-box
+        #content1.pz-box-header
+          | &#40664;&#35748;&#27169;&#24335;
+        .pz-form
+          .pz-form-row
+            .pz-form-label &#20869;&#23481;
+            textarea(name='content1', style='width:.300px;height:300px;visibility:hidden;') KindEditor
+          .pz-form-footer
+            input.pz-btn.pz-btn-danger(type='submit', value='提交')
+      .pz-box
+        #content2.pz-box-header
+          | &#31616;&#21333;&#27169;&#24335;
+        .pz-form
+          .pz-form-row
+            .pz-form-label &#20869;&#23481;
+            textarea(name='content2', style='width:.300px;height:300px;visibility:hidden;') KindEditor
+          .pz-form-footer
+            input.pz-btn.pz-btn-danger(type='submit', value='提交')
+      .pz-box
+        #content3.pz-box-header
+          | &#20851;&#38381;HTML&#36807;&#28388;
+        .pz-form
+          .pz-form-row
+            .pz-form-label &#20869;&#23481;
+            textarea(name='content3', style='width:.300px;height:300px;visibility:hidden;') KindEditor
+          .pz-form-footer
+            input.pz-btn.pz-btn-danger(type='submit', value='提交')
+      .pz-box
+        #content4.pz-box-header
+          | &#33258;&#23450;&#20041;&#25554;&#20214;
+        .pz-form
+          .pz-form-row
+            .pz-form-label &#20869;&#23481;
+            textarea(name='content4', style='width:.300px;height:300px;visibility:hidden;') KindEditor
+          .pz-form-footer
+            input.pz-btn.pz-btn-danger(type='submit', value='提交')
+    // end of pz-wrapper

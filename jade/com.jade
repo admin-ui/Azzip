@@ -1,0 +1,318 @@
+doctype html
+html(lang='zh-CN')
+  head
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    title Azzip admin &#32452;&#20214;
+    link(href='assets/css/common.css?ver=1.01', type='text/css', rel='stylesheet')
+    link(href='assets/css/font.css?ver=1.01', type='text/css', rel='stylesheet')
+    link(href='assets/css/frame.css?ver=1.01', type='text/css', rel='stylesheet')
+    //if lt IE 8
+      script(type='text/javascript', src='assets/js/font.js')
+      script(defer='', type='text/javascript', src='assets/js/pngfix.js')
+    script(type='text/javascript', src='assets/js/jquery.js')
+    script(type='text/javascript', src='assets/js/jquery/calendar.js')
+    script(type='text/javascript', src='assets/js/jquery/tools.js')
+    script(type='text/javascript', src='assets/js/frame.js')
+  body
+    #pz-header.pz-header.pz-fix-top
+      h1 Azzip UI - &#32452;&#20214;
+      a.pz-btn(href='#buttonGroup', rel='section-toggle') &#25353;&#38062;&#32452;
+      a.pz-btn(href='#dropdown', rel='section-toggle') &#33756;&#21333;
+      a.pz-btn(href='#tabs', rel='section-toggle') &#26631;&#31614;&#39029;
+      a.pz-btn(href='#tags', rel='section-toggle') &#26631;&#35760;&#21644;&#24509;&#31456;
+      a.pz-btn(href='#thumbnail', rel='section-toggle') &#22270;&#29255;&#26694;
+      a.pz-btn(href='#alert', rel='section-toggle') &#35686;&#21578;&#26694;
+    #pz-shader.pz-shader.pz-fix-top
+    .pz-header-fix-space
+    .pz-wrapper
+      #buttonGroup.pz-heading
+        h2
+          | &#25353;&#38062;&#32452;
+          small pz-btn-group
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              p
+                | &#20351;&#29992;
+                code &lt;a&gt;
+                | &#25110;
+                code &lt;input type&equals;&quot;button&quot;&gt;
+                | &#26631;&#31614;&#21046;&#20316;&#25353;&#38062;
+              p
+                | &#19981;&#25512;&#33616;
+                code &lt;button&gt;
+                | &#26631;&#31614;&#65292;&#22240;&#20026;&#32769;&#27983;&#35272;&#22120;&#26377;&#20860;&#23481;&#38382;&#39064;
+              p &NonBreakingSpace;
+              p
+                | &#20351;&#29992;
+                code class&equals;&quot;pz-btn-group&quot;
+                | &#21253;&#22260;&#19968;&#32452;&#25353;&#38062;&#65292;&#22914;&#19979;&colon;
+              .pz-box-content
+                .pz-btn-group
+                  a.pz-btn(href='javascript:;') &#23567;&#30333;
+                  a.pz-btn(href='javascript:;') &#23567;&#30333;&#30333;
+                  a.pz-btn.pz-btn-danger(href='javascript:;') &#23567;&#32418;
+                  a.pz-btn.pz-btn-success(href='javascript:;') &#23567;&#32511;
+              p &#32467;&#26500;&#22914;&#19979;&colon;
+              code.clearfix
+                pre.
+                  \n<div class="pz-btn-group">
+                      <a href="xx" class="pz-btn">小白</a>
+                      ......
+                  </div>                  
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              p &#20223;&#24037;&#20855;&#26639;&#30340;&#25928;&#26524;&#65292;&#22914;&#19979;&colon;
+              .pz-box-content
+                .pz-btn-group
+                  a.pz-btn(href='javascript:;') &#23567;&#30333;
+                  a.pz-btn.pz-btn-danger(href='javascript:;') &#23567;&#32418;
+                  a.pz-btn.pz-btn-success(href='javascript:;') &#23567;&#32511;
+                .pz-btn-group
+                  a.pz-btn(href='javascript:;') &#23567;2
+                  a.pz-btn(href='javascript:;') &#23567;&#30333;3
+                  a.pz-btn(href='javascript:;') &#23567;&#23567;&#30333;
+                .pz-btn-group
+                  a.pz-btn(href='javascript:;') &#23567;&#30333;
+                  a.pz-btn(href='javascript:;') &#23567;&#30333;2
+              p &#32467;&#26500;&#22914;&#19979;&colon;
+              code.clearfix
+                pre.
+                  \n<div class="pz-btn-group">
+                      <a href="xx" class="pz-btn">小白</a>
+                      ......
+                  </div> 
+                  <div class="pz-btn-group">
+                      <a href="xx" class="pz-btn">小2</a>
+                      ......
+                  </div>                  
+      #dropdown.pz-heading
+        h2
+          | &#33756;&#21333;
+          small pz-submenu
+      .pz-fluid-layout
+        .pz-fluid-side
+          .pz-block
+            ul.pz-submenu
+              li
+                a(href='javascript:;') &#36825;&#26159;&#33756;&#21333;
+              li
+                a(href='javascript:;') Hello
+              li
+                span &#20320;&#22909;&#65292;&#25105;&#19981;&#26159;&#38142;&#25509;
+              li
+                a(href='javascript:;') World
+              li.pz-submenu-gap
+              li
+                a(href='javascript:;') Azzip
+        .pz-fluid-main
+          .pz-box
+            .pz-box-content
+              pre.
+                \n<ul class="pz-submenu">
+                    <li><a href="javascript:;">这是菜单</a></li>
+                    <li><a href="javascript:;">Hello</a></li>
+                    <li><span>你好，我不是链接</span></li>
+                    <li><a href="javascript:;">World</a></li>
+                    <li class="pz-submenu-gap"></li>
+                    <li><a href="javascript:;">Azzip</a></li>
+                </ul>                
+      .pz-heading
+        h3
+          | &#19979;&#25289;&#33756;&#21333;
+          small pz-submenu
+      .pz-fluid-layout
+        .pz-fluid-side
+          .pz-box
+            .pz-box-content
+              a.pz-btn.pz-btn-submit(href='javascript:;', rel='menu-down')
+                | &#28857;&#20987;&#25105;&#30475;&#30475;
+                i.icon-caret-down
+              ul.pz-submenu(style='display:none')
+                li
+                  a(href='javascript:;') &#36825;&#26159;&#33756;&#21333;
+                li
+                  a(href='javascript:;') Hello
+                li
+                  span &#20320;&#22909;&#65292;&#25105;&#19981;&#26159;&#38142;&#25509;
+                li
+                  a(href='javascript:;') World
+                li.pz-submenu-gap
+                li
+                  a(href='javascript:;') Azzip
+              a.pz-btn.pz-btn-submit(href='javascript:;', rel='menu-up')
+                | &#21521;&#19978;&#30340;&#33756;&#21333;
+                i.icon-caret-down
+              ul.pz-submenu(style='display:none')
+                li
+                  a(href='javascript:;') &#36825;&#26159;&#33756;&#21333;
+                li
+                  a(href='javascript:;') Hello
+                li
+                  span &#20320;&#22909;&#65292;&#25105;&#19981;&#26159;&#38142;&#25509;
+                li
+                  a(href='javascript:;') World
+                li.pz-submenu-gap
+                li
+                  a(href='javascript:;') Azzip
+        .pz-fluid-main
+          .pz-box
+            .pz-box-content
+              pre.
+                \n<a href="javascript:;" class="pz-btn pz-btn-submit" 
+                    rel="menu-down">点击我看看 <i class="icon-caret-down"></i></a>
+                <ul class="pz-submenu" style="display:none">
+                    <li>...</li>
+                </ul>
+                
+                <a href="javascript:;" class="pz-btn pz-btn-submit" 
+                    rel="menu-up">向上的菜单 <i class="icon-caret-down"></i></a>
+                <ul class="pz-submenu" style="display:none">
+                    <li>...</li>
+                </ul>                
+      #tabs.pz-heading
+        h2
+          | &#26631;&#31614;&#39029;
+          small pz-tab-header pz-tab
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-tab-header.clearfix
+            a.link-on(href='javascript:;') tab1
+            a(href='javascript:;') &#26631;&#31614;2
+            a(href='javascript:;') &#26631;&#31614;3
+          .pz-box.pz-tab
+            br
+            br
+            | tab1 content
+            br
+            br
+          .pz-box.pz-tab
+            br
+            br
+            | tab2&#30340;&#20869;&#23481;
+            br
+            br
+          .pz-box.pz-tab
+            br
+            br
+            | tab3&#30340;&#20869;&#23481;
+            br
+            br
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              code.clearfix
+                pre.
+                  \n<div class="pz-tab-header clearfix">
+                      <a href="javascript:;" class="link-on">tab1</a>
+                      <a href="javascript:;">标签2</a>
+                      <a href="javascript:;">标签3</a>
+                  </div>
+                  <div class="pz-box pz-tab">tab1 content</div>
+                  <div class="pz-box pz-tab">tab2的内容</div>
+                  <div class="pz-box pz-tab">tab3的内容</div>                  
+      #tags.pz-heading
+        h2
+          | &#26631;&#35760;&#21644;&#24509;&#31456;
+          small pz-tag pz-badge
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              span.pz-tag &#26222;&#36890;&#26631;&#35760; span&period;pz-tag
+              br
+              span.pz-tag.pz-tag-reverse &#21453;&#33394;&#26631;&#35760; span&period;pz-tag&period;pz-tag-reverse
+              br
+              span.pz-tag.pz-tag-success &#25104;&#21151;&#26631;&#35760; span&period;pz-tag&period;pz-tag-success
+              br
+              span.pz-tag.pz-tag-warning &#35686;&#21578;&#26631;&#35760; span&period;pz-tag&period;pz-tag-warning
+              br
+              span.pz-tag.pz-tag-danger &#21361;&#38505;&#25805;&#20316; span&period;pz-tag&period;pz-tag-danger
+              br
+              span.pz-tag.pz-tag-info &#20449;&#24687; span&period;pz-tag&period;pz-tag-info
+              br
+              span.pz-tag.pz-tag-submit &#25552;&#20132;&#20449;&#24687; span&period;pz-tag&period;pz-tag-submit
+              br
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              span.pz-badge &#26222;&#36890;&#24509;&#31456; span&period;pz-badge
+              br
+              span.pz-badge.pz-badge-reverse &#21453;&#33394;&#24509;&#31456; span&period;pz-badge&period;pz-badge-reverse
+              br
+              span.pz-badge.pz-badge-success &#25104;&#21151;&#24509;&#31456; span&period;pz-badge&period;pz-badge-success
+              br
+              span.pz-badge.pz-badge-warning &#35686;&#21578;&#24509;&#31456; span&period;pz-badge&period;pz-badge-warning
+              br
+              span.pz-badge.pz-badge-danger &#21361;&#38505;&#25805;&#20316;&#24509;&#31456; span&period;pz-badge&period;pz-badge-danger
+              br
+              span.pz-badge.pz-badge-info &#20449;&#24687;&#24509;&#31456; span&period;pz-badge&period;pz-badge-info
+              br
+              span.pz-badge.pz-badge-submit &#25552;&#20132;&#24509;&#31456; span&period;pz-badge&period;pz-badge-submit
+              br
+      #thumbnails.pz-heading
+        h2
+          | &#22270;&#29255;&#26694;
+          small pz-thumb
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-block
+            ul
+              li(style='float:left;')
+                a.pz-thumb(href='javascript:;')
+                  img(src='assets/img/bg-side.gif', alt='260x180', style='width: 260px; height: 180px;')
+              li(style='float:left;')
+                a.pz-thumb(href='javascript:;')
+                  img(src='assets/img/bg-side.gif', alt='260x180', style='width: 260px; height: 180px;')
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              p
+                | &#20351;&#29992;
+                code &lt;a class&equals;&quot;pz-thumb&quot; href&equals;&quot;xx&quot;&gt;&lt;img src&equals;&quot;xxx&quot; &sol;&gt;&lt;&sol;a&gt;
+                | &#29983;&#25104;&#19968;&#20010;&#22270;&#29255;&#26694;
+              p
+              p
+                | &#22914;&#26524;&#38656;&#35201;&#20570;&#25104;&#22270;&#29255;&#25490;&#21015;&#65292;&#21487;&#20197;&#20351;&#29992;
+                code &lt;li style&equals;&quot;float&colon;left&quot;&gt;&period;&period;&period;pz-thumb&period;&period;&period;&lt;&sol;lt&gt;
+      #alert.pz-heading
+        h2
+          | &#35686;&#21578;&#26694;
+          small pz-alert
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-alert
+            h3 &#35686;&#21578;&#26694;&#30340;&#26631;&#39064; h3 class&equals;&quot;pz-alert&quot;
+            p &#36825;&#26159;&#20869;&#23481; lorem ipsum &#29992; p &#26631;&#31614;
+            a.pz-alert-close(href='javascript:;') X
+          .pz-alert.pz-alert-success
+            p &#25104;&#21151;&#25552;&#31034; div class&equals;&quot;pz-alert pz-alert-success&quot;
+            a.pz-alert-close(href='javascript:;') X
+          .pz-alert.pz-alert-error
+            p &#38169;&#35823;&#25552;&#31034; div class&equals;&quot;pz-alert pz-alert-error&quot;
+            a.pz-alert-close(href='javascript:;') X
+          .pz-alert.pz-alert-info
+            p &#20449;&#24687;&#25552;&#31034; div class&equals;&quot;pz-alert pz-alert-info&quot;
+            a.pz-alert-close(href='javascript:;') X
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              p &#20195;&#30721;&colon;
+              code.clearfix
+                pre.
+                  \n<div class="pz-alert">
+                      <h3>警告框的标题 h3</h3>
+                      <p>这是内容 lorem ipsum 用 p 标签</p>
+                      <a href="javascript:;" class="pz-alert-close">X</a>
+                  </div>                  
+              br
+              p
+                | &#28155;&#21152;&#25552;&#31034;&#20851;&#38381;&#25353;&#38062;&#65292;&#22312;
+                code div&period;pz-alert
+                | &#20869;&#37096;&#22686;&#21152;&#20195;&#30721;&colon;
+              p
+                code &lt;a href&equals;&quot;javascript&colon;&semi;&quot; class&equals;&quot;pz-alert-close&quot;&gt;X&lt;&sol;a&gt;
+    // end of pz-wrapper

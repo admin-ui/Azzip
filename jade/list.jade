@@ -1,0 +1,190 @@
+doctype html
+html(lang='zh-CN')
+  head
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    title Azzip admin &#20856;&#22411;&#39029;&#38754;&colon;&#21015;&#34920;
+    link(href='assets/css/common.css?ver=1.01', type='text/css', rel='stylesheet')
+    link(href='assets/css/font.css?ver=1.01', type='text/css', rel='stylesheet')
+    link(href='assets/css/frame.css?ver=1.01', type='text/css', rel='stylesheet')
+    //if lt IE 8
+      script(type='text/javascript', src='assets/js/font.js')
+      script(defer='', type='text/javascript', src='assets/js/pngfix.js')
+    script(type='text/javascript', src='assets/js/jquery.js')
+    script(type='text/javascript', src='assets/js/jquery/calendar.js')
+    script(type='text/javascript', src='assets/js/jquery/tools.js')
+    script(type='text/javascript', src='assets/js/frame.js')
+    link(href='assets/css/vselect.css', type='text/css', rel='stylesheet')
+    script(src='assets/js/jquery/vselect.js', type='text/javascript')
+  body
+    #pz-header.pz-header.pz-fix-top
+      h1 Azzip UI - &#20856;&#22411;&#39029;&#38754;&colon;&#21015;&#34920;
+      a.pz-btn.pz-btn-success(href='edit.html') &#26032;&#24314;&#25968;&#25454;
+    #pz-shader.pz-shader.pz-fix-top
+    .pz-header-fix-space
+    .pz-wrapper
+      .pz-search-form
+        .pz-form-row
+          .pz-form-input
+            select#status.pz-form-select.pz-form-input-small(name='status')
+              option(value='1') &#20250;&#21592;&#21517;&#23383;
+              option(value='2') &#20250;&#21592;&#37038;&#20214;
+              option(value='3') &#20250;&#21592;&#26165;&#31216;
+              option(value='4') &#27880;&#20876;&#26102;&#38388;
+            input#username.pz-form-text(type='text', name='username', placeholder='搜索会员名字')
+        .pz-form-row
+          .pz-form-input
+            | &#26085;&#26399;&#20174;
+            input.pz-form-text.pz-form-input-small.pz-date(type='text', name='calendar1', value='2008-08-08')
+            | &#33267;
+            input.pz-form-text.pz-form-input-small.pz-date(type='text', name='calendar2', value='2013-12-31')
+        .pz-form-row
+          .pz-form-input
+            input.pz-btn.pz-btn-submit(type='button', value='  搜索  ')
+      script(type='text/javascript')
+        $(function(){
+        $("#status").vselect({
+        width: 86,
+        direction: "bottom",
+        change: function(){
+        // if ($(this).val() == 1) {
+        //     // show hide input
+        // }
+        $("#username").focus();
+        }
+        });
+        });
+      // end of pz-search-form
+      .pz-box
+        .pz-box-header
+          | &#21487;&#20197;&#21152;&#21015;&#34920;&#26631;&#39064;&#65292;&#25110;&#32773;&#19981;&#29992;&#20063;&#21487;&#20197;
+        table.pz-table(border='0', cellspacing='0', cellpadding='0')
+          tr
+            th &num;
+            th &#22995;&#21517;
+            th &#24615;&#21035;
+            th &#24180;&#40836;
+            th &#25805;&#20316;
+          tr
+            td 1
+            td &#26446;&#38647;
+            td &#30007;
+            td 14
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn(href='javascript:;', title='删除')
+                  i.icon-remove
+          tr
+            td 2
+            td &#38889;&#26757;&#26757;
+            td &#22899;
+            td 13
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn(href='javascript:;', title='删除')
+                  i.icon-remove
+          tr
+            td 3
+            td Jim
+            td &#30007;
+            td 14
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn(href='javascript:;', title='删除')
+                  i.icon-remove
+          tr
+            td 4
+            td Lucy
+            td &#22899;
+            td 13
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn(href='javascript:;', title='删除')
+                  i.icon-remove
+          tr
+            td 5
+            td Lily
+            td &#22899;
+            td 13
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn.pz-btn-danger(href='javascript:;', title='删除')
+                  i.icon-remove
+          tr
+            td 6
+            td &#26519;&#28059;
+            td &#30007;
+            td 13
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn(href='javascript:;', title='删除')
+                  i.icon-remove
+          tr
+            td 7
+            td Uncle Wang
+            td &#30007;
+            td 40
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn(href='javascript:;', title='删除')
+                  i.icon-remove
+          tr
+            td 8
+            td &#39640;&#24935;
+            td &#22899;
+            td 26
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn(href='javascript:;', title='删除')
+                  i.icon-remove
+          tr
+            td 9
+            td Polly
+            td n&sol;a
+            td 1
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn(href='javascript:;', title='删除')
+                  i.icon-remove
+          tr
+            td 10
+            td Lady GaGa
+            td &quest;
+            td &quest;
+            td
+              .pz-btn-group
+                a.pz-btn(href='javascript:;', title='查看')
+                  i.icon-search
+                a.pz-btn(href='javascript:;', title='删除')
+                  i.icon-remove
+        .pz-table-footer
+          .pz-left
+            a.pz-btn.pz-btn-danger(href='javascript:;') &#21024;&#38500;&#25152;&#36873;&#25968;&#25454;
+            input.pz-btn.pz-btn-submit(type='button', value='这是input')
+          .pz-pagination.pz-right
+            a(href='javascript:;') &#39318;&#39029;
+            a(href='javascript:;') 1
+            a(href='javascript:;') 2
+            span 3
+            a(href='javascript:;') 4
+            a(href='javascript:;') 5
+            a(href='javascript:;') &#26411;&#39029;
+    // end of pz-wrapper

@@ -1,0 +1,332 @@
+doctype html
+html(lang='zh-CN')
+  head
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    title Azzip admin layout
+    link(href='assets/css/common.css?ver=1.01', type='text/css', rel='stylesheet')
+    link(href='assets/css/font.css?ver=1.01', type='text/css', rel='stylesheet')
+    link(href='assets/css/frame.css?ver=1.01', type='text/css', rel='stylesheet')
+    //if lt IE 8
+      script(type='text/javascript', src='assets/js/font.js')
+      script(defer='', type='text/javascript', src='assets/js/pngfix.js')
+    script(type='text/javascript', src='assets/js/jquery.js')
+    script(type='text/javascript', src='assets/js/jquery/calendar.js')
+    script(type='text/javascript', src='assets/js/jquery/tools.js')
+    script(type='text/javascript', src='assets/js/frame.js')
+  body
+    #pz-header.pz-header.pz-fix-top
+      h1 Azzip UI - &#20840;&#23616;&#26679;&#24335;&#21644;&#24067;&#23616;
+      a.pz-btn(href='#globalStyle', rel='section-toggle') &#20840;&#23616;&#26679;&#24335;
+      a.pz-btn(href='#layoutControl', rel='section-toggle') &#24067;&#23616;&#25511;&#21046;
+      a.pz-btn(href='#fluidLayout', rel='section-toggle') &#28082;&#24577;&#39044;&#35774;&#26629;&#26684;
+      a.pz-btn(href='#fluidGrid', rel='section-toggle') &#28082;&#24577;12&#26629;&#26684;
+    #pz-shader.pz-shader.pz-fix-top
+    .pz-header-fix-space
+    .pz-wrapper
+      #globalStyle.pz-heading
+        h2
+          | &#20840;&#23616;&#26679;&#24335;
+          small doctype&comma; &#38142;&#25509;&#21644;&#40664;&#35748;&#23383;&#20307;
+      .pz-fluid-layout
+        .pz-fluid-side
+          .pz-box
+            .pz-box-content
+              h3 &#38142;&#25509;&#21644;&#23383;&#20307;
+              p &#40664;&#35748;&#23383;&#20307;14px &lpar;&#22312;content&#31867;&#37324;&#38754;&#26159;12px&rpar;
+              p &#23383;&#20307;&#34892;&#39640;20px
+              p &#23383;&#20307;&#39068;&#33394;&#20540; &num;333333
+              p
+                a(href='javascript:;') &#36825;&#26159;1&#20010;&#40664;&#35748;&#38142;&#25509;
+              p &NonBreakingSpace;
+        .pz-fluid-main
+          .pz-box
+            .pz-box-content
+              h3 html doctype
+              pre.
+                \n<!DOCTYPE html>
+                <html lang="zh-CN">
+                <head>
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+                ......                
+      #layoutControl.pz-heading
+        h2
+          | &#24067;&#23616;&#25511;&#21046;
+          small &#24038;&#12289;&#21491;&#28014;&#21160;&#65292;&#28165;&#29702;&#28014;&#21160;
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              p
+                | &#31995;&#32479;&#20869;&#32622;&#20102;class
+                code &period;pz-left
+                | &#21644;
+                code &period;pz-right
+                | &#34920;&#31034;&#24038;&#28014;&#21160;&#21644;&#21491;&#28014;&#21160;
+              p
+                | &#20351;&#29992;
+                code div class&equals;&quot;clear&quot;
+                | &#21487;&#20197;&#28165;&#29702;&#20854;&#19978;&#19979;&#23481;&#22120;&#30340;&#28014;&#21160;
+              p
+                | &#20351;&#29992;
+                code div class&equals;&quot;clearfix&quot;
+                | &#21487;&#20197;&#24403;&#21069;&#23481;&#22120;&#30340;&#28014;&#21160;&#20869;&#23481;
+              p
+                | &#20351;&#29992;
+                code &lt;i class&equals;&quot;i5&quot;&gt;&lt;&sol;i&gt;
+                | &#20135;&#29983;5px&#30340;&#39640;&#24230;&#31354;&#38388;&#65288;&#21516;&#26102;&#28165;&#29702;&#19978;&#19979;&#23481;&#22120;&#28014;&#21160;&#65289;
+              p
+                | &#19978;&#20363;&#25903;&#25345;
+                code i5
+                | &comma;
+                code i10
+                | &comma;
+                code i15
+                | &comma;
+                code i20
+                | &comma;
+                code i30
+                | &#21508;&#31181;&#39640;&#24230;
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              p
+                | css
+                code position&colon;fixed
+                | &#19981;&#25903;&#25345;ie6&#65292;Azzip UI&#25552;&#20379;&#20102;&#19968;&#20010;&#22522;&#20110;css&#30340;&#20860;&#23481;&#26041;&#26696;
+              p
+                | &#20351;&#29992;
+                code div class&equals;&quot;pz-fix-top&quot;
+                | &#35753;&#19968;&#20010;div&#23481;&#22120;&#22266;&#23450;&#28014;&#21160;&#21040;&#39029;&#38754;&#39030;&#37096;
+              p
+                | &#20351;&#29992;
+                code div class&equals;&quot;pz-fix-bottom&quot;
+                | &#35753;&#19968;&#20010;div&#23481;&#22120;&#22266;&#23450;&#28014;&#21160;&#21040;&#39029;&#38754;&#24213;&#37096;
+              p
+                | &#20351;&#29992;
+                code div class&equals;&quot;pz-fix-left&quot;
+                | &#35753;&#19968;&#20010;div&#23481;&#22120;&#22266;&#23450;&#28014;&#21160;&#21040;&#39029;&#38754;&#24038;&#20391;
+              p
+                | &#20351;&#29992;
+                code div class&equals;&quot;pz-fix-right&quot;
+                | &#35753;&#19968;&#20010;div&#23481;&#22120;&#22266;&#23450;&#28014;&#21160;&#21040;&#39029;&#38754;&#21491;&#20391;
+      #fluidLayout.pz-heading
+        h2
+          | &#28082;&#24577;&#39044;&#35774;&#26629;&#26684; DEMO
+          small &#20027;&#20391;&#26639;&#12289;&#21452;&#26639;&#12289;&#19977;&#26639;&#12289;&#22235;&#26639;
+      .pz-fluid-layout
+        .pz-fluid-main
+          .pz-box div&period;pz-fluid-main
+        .pz-fluid-side
+          .pz-box div&period;pz-fluid-side
+        .pz-fluid-side
+          .pz-box div&period;pz-fluid-side
+        .pz-fluid-main
+          .pz-box div&period;pz-fluid-main
+        .pz-fluid-dual
+          .pz-box div&period;pz-fluid-dual
+        .pz-fluid-dual
+          .pz-box div&period;pz-fluid-dual
+        .pz-fluid-triple
+          .pz-box div&period;pz-fluid-triple
+        .pz-fluid-triple
+          .pz-box div&period;pz-fluid-triple
+        .pz-fluid-triple
+          .pz-box div&period;pz-fluid-triple
+        .pz-fluid-quad
+          .pz-box div&period;pz-fluid-quad
+        .pz-fluid-quad
+          .pz-box div&period;pz-fluid-quad
+        .pz-fluid-quad
+          .pz-box div&period;pz-fluid-quad
+        .pz-fluid-quad
+          .pz-box div&period;pz-fluid-quad
+      .pz-heading
+        h3 &#28082;&#24577;&#39044;&#35774;&#26629;&#26684; DEMO code
+      .pz-box
+        .pz-box-content(style='height:360px; overflow:auto;')
+          pre.
+            \n<div class="pz-fluid-layout">
+                <div class="pz-fluid-main">
+                    <div class="pz-box">div.pz-fluid-main</div>
+                </div>
+                <div class="pz-fluid-side">
+                    <div class="pz-box">div.pz-fluid-side</div>
+                </div>
+                <div class="pz-fluid-side">
+                    <div class="pz-box">div.pz-fluid-side</div>
+                </div>
+                <div class="pz-fluid-main">
+                    <div class="pz-box">div.pz-fluid-main</div>
+                </div>
+                <div class="pz-fluid-dual">
+                    <div class="pz-box">div.pz-fluid-dual</div>
+                </div>
+                <div class="pz-fluid-dual">
+                    <div class="pz-box">div.pz-fluid-dual</div>
+                </div>
+                <div class="pz-fluid-triple">
+                    <div class="pz-box">div.pz-fluid-triple</div>
+                </div>
+                <div class="pz-fluid-triple">
+                    <div class="pz-box">div.pz-fluid-triple</div>
+                </div>
+                <div class="pz-fluid-triple">
+                    <div class="pz-box">div.pz-fluid-triple</div>
+                </div>
+                <div class="pz-fluid-quad">
+                    <div class="pz-box">div.pz-fluid-quad</div>
+                </div>
+                <div class="pz-fluid-quad">
+                    <div class="pz-box">div.pz-fluid-quad</div>
+                </div>
+                <div class="pz-fluid-quad">
+                    <div class="pz-box">div.pz-fluid-quad</div>
+                </div>
+                <div class="pz-fluid-quad">
+                    <div class="pz-box">div.pz-fluid-quad</div>
+                </div>
+            </div>            
+      #fluidGrid.pz-heading
+        h2
+          | &#28082;&#24577;12&#26629;&#26684; DEMO
+          small 12&#20010;&#31561;&#20998;&#28082;&#24577;&#26629;&#26684;&#65292;&#20860;&#23481;IE6
+      .pz-fluid-grid
+        .pz-grid1
+          .pz-box 1
+        .pz-grid1
+          .pz-box 1
+        .pz-grid1
+          .pz-box 1
+        .pz-grid1
+          .pz-box 1
+        .pz-grid1
+          .pz-box 1
+        .pz-grid1
+          .pz-box 1
+        .pz-grid1
+          .pz-box 1
+        .pz-grid1
+          .pz-box 1
+        .pz-grid1
+          .pz-box 1
+        .pz-grid1
+          .pz-box 1
+        .pz-grid1
+          .pz-box 1
+        .pz-grid1
+          .pz-box 1
+      .pz-fluid-grid
+        .pz-grid4
+          .pz-box 4
+        .pz-grid4
+          .pz-box 4
+        .pz-grid4
+          .pz-box 4
+      .pz-fluid-grid
+        .pz-grid4
+          .pz-box 4
+        .pz-grid8
+          .pz-box 8
+      .pz-fluid-grid
+        .pz-grid5
+          .pz-box 5
+        .pz-grid7
+          .pz-box 7
+      .pz-fluid-grid
+        .pz-grid6
+          .pz-box 6
+        .pz-grid6
+          .pz-box 6
+      .pz-fluid-grid
+        .pz-grid12
+          .pz-box 12
+      #fluidGrid.pz-heading
+        h3 &#28082;&#24577;12&#26629;&#26684; DEMO code
+      .pz-box
+        .pz-box-content(style='height:360px; overflow:auto;')
+          pre.
+            \n<div class="pz-fluid-grid">
+                <div class="pz-grid1">
+                    <div class="pz-box">1</div>
+                </div>
+                <div class="pz-grid1">
+                    <div class="pz-box">1</div>
+                </div>
+                <div class="pz-grid1">
+                    <div class="pz-box">1</div>
+                </div>
+                <div class="pz-grid1">
+                    <div class="pz-box">1</div>
+                </div>
+                <div class="pz-grid1">
+                    <div class="pz-box">1</div>
+                </div>
+                <div class="pz-grid1">
+                    <div class="pz-box">1</div>
+                </div>
+                <div class="pz-grid1">
+                    <div class="pz-box">1</div>
+                </div>
+                <div class="pz-grid1">
+                    <div class="pz-box">1</div>
+                </div>
+                <div class="pz-grid1">
+                    <div class="pz-box">1</div>
+                </div>
+                <div class="pz-grid1">
+                    <div class="pz-box">1</div>
+                </div>
+                <div class="pz-grid1">
+                    <div class="pz-box">1</div>
+                </div>
+                <div class="pz-grid1">
+                    <div class="pz-box">1</div>
+                </div>
+            </div>
+            
+            <div class="pz-fluid-grid">
+                <div class="pz-grid4">
+                    <div class="pz-box">4</div>
+                </div>
+                <div class="pz-grid4">
+                    <div class="pz-box">4</div>
+                </div>
+                <div class="pz-grid4">
+                    <div class="pz-box">4</div>
+                </div>
+            </div>
+            
+            <div class="pz-fluid-grid">
+                <div class="pz-grid4">
+                    <div class="pz-box">4</div>
+                </div>
+                <div class="pz-grid8">
+                    <div class="pz-box">8</div>
+                </div>
+            </div>
+            
+            <div class="pz-fluid-grid">
+                <div class="pz-grid5">
+                    <div class="pz-box">5</div>
+                </div>
+                <div class="pz-grid7">
+                    <div class="pz-box">7</div>
+                </div>
+            </div>
+            
+            <div class="pz-fluid-grid">
+                <div class="pz-grid6">
+                    <div class="pz-box">6</div>
+                </div>
+                <div class="pz-grid6">
+                    <div class="pz-box">6</div>
+                </div>
+            </div>
+            
+            <div class="pz-fluid-grid">
+                <div class="pz-grid12">
+                    <div class="pz-box">12</div>
+                </div>
+            </div>            
+    // end of pz-wrapper

@@ -1,0 +1,66 @@
+doctype html
+html(lang='zh-CN')
+  head
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    title Azzip admin chart
+    link(href='assets/css/common.css?ver=1.01', type='text/css', rel='stylesheet')
+    link(href='assets/css/font.css?ver=1.01', type='text/css', rel='stylesheet')
+    link(href='assets/css/frame.css?ver=1.01', type='text/css', rel='stylesheet')
+    //if lt IE 8
+      script(type='text/javascript', src='assets/js/font.js')
+      script(defer='', type='text/javascript', src='assets/js/pngfix.js')
+    script(type='text/javascript', src='assets/js/jquery.js')
+    script(type='text/javascript', src='assets/js/jquery/calendar.js')
+    script(type='text/javascript', src='assets/js/jquery/tools.js')
+    script(type='text/javascript', src='assets/js/frame.js')
+    script(type='text/javascript', src='assets/js/highchart/highcharts.js')
+    script(type='text/javascript', src='assets/js/highcharts.js')
+  body
+    #pz-header.pz-header.pz-fix-top
+      h1 Azzip UI - &#20856;&#22411;&#39029;&#38754;&colon;&#22270;&#24418;&#34920;
+      a.pz-btn(href='#pie', rel='section-toggle') &#39292;&#22411;&#22270;
+      a.pz-btn(href='#bar', rel='section-toggle') &#26609;&#24418;&#22270;
+      a.pz-btn(href='#line', rel='section-toggle') &#32447;&#22411;&#22270;
+    #pz-shader.pz-shader.pz-fix-top
+    .pz-header-fix-space
+    .pz-wrapper
+      #pie.pz-heading
+        h2
+          | &#39292;&#22411;&#22270;
+          small basicpie&VerticalLine;donutchart
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              #basicpie
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              #donutchart
+      #bar.pz-heading
+        h2
+          | &#26609;&#24418;&#22270;
+          small basicbar&VerticalLine;basiccolumn
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              #basicbar
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              #basiccolumn
+      #line.pz-heading
+        h2
+          | &#32447;&#22411;&#22270;
+          small basicline&VerticalLine;clickablepoints
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              #basicline
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              #clickablepoints

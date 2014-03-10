@@ -1,0 +1,57 @@
+doctype html
+html(lang='zh-CN')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title Azzip admin 404
+    link(href='assets/css/common.css?ver=1.01', type='text/css', rel='stylesheet')
+    link(href='assets/css/font.css?ver=1.01', type='text/css', rel='stylesheet')
+    link(href='assets/css/top.css?ver=1.01', type='text/css', rel='stylesheet')
+    //if lt IE 8
+      script(type='text/javascript', src='assets/js/font.js')
+      script(defer='', type='text/javascript', src='assets/js/pngfix.js')
+    script(type='text/javascript', src='assets/js/jquery.js')
+    script(type='text/javascript', src='assets/js/jquery/calendar.js')
+    script(type='text/javascript', src='assets/js/jquery/tools.js')
+    script(type='text/javascript', src='assets/js/top.js')
+    style(type='text/css')
+      body{
+      -webkit-backface-visibility:hidden
+      }
+      .pz-main{
+      margin-left:61px;
+      _margin-left:0;
+      }
+      .pz-login-wrap{
+      height:100%;
+      width:100%;
+      position:absolute;
+      left:0;
+      top:0;
+      }
+      .pz-login{
+      position: absolute;
+      top: 22%;
+      left: 38%;
+      height: 300px;
+      }
+      .pz-login h1{
+      font-size:150px;
+      font-weight:normal;
+      line-height:45px;
+      color:#ffffff;
+      }
+  body
+    .pz-dock
+      dl
+        // <dd><a href="login.html"><i class="icon-home big-icon"></i></a></dd>
+        dd
+          a.link-on(href='login.html')
+            i.icon-key.big-icon
+            br
+            | &#30331;&#24405;
+    .pz-main
+      .pz-login-wrap
+        .pz-login
+          h1 404
+      // end of pz-login-wrap

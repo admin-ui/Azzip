@@ -1,0 +1,191 @@
+doctype html
+html(lang='zh-CN')
+  head
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    title Azzip admin js&#25554;&#20214;
+    link(href='assets/css/common.css?ver=1.01', type='text/css', rel='stylesheet')
+    link(href='assets/css/font.css?ver=1.01', type='text/css', rel='stylesheet')
+    link(href='assets/css/frame.css?ver=1.01', type='text/css', rel='stylesheet')
+    //if lt IE 8
+      script(type='text/javascript', src='assets/js/font.js')
+      script(defer='', type='text/javascript', src='assets/js/pngfix.js')
+    script(type='text/javascript', src='assets/js/jquery.js')
+    script(type='text/javascript', src='assets/js/jquery/calendar.js')
+    script(type='text/javascript', src='assets/js/jquery/tools.js')
+    script(type='text/javascript', src='assets/js/frame.js')
+  body
+    #pz-header.pz-header.pz-fix-top
+      h1 Azzip UI - js&#25554;&#20214;
+      a.pz-btn(href='#datetime', rel='section-toggle') &#26085;&#21382;&#25511;&#20214;
+      a.pz-btn(href='#tooltip', rel='section-toggle') &#21160;&#24863;&#25552;&#31034;
+      a.pz-btn(href='#dialog', rel='section-toggle') &#23545;&#35805;&#26694;
+      a.pz-btn(href='#popshow', rel='section-toggle') &#28857;&#20987;&#30475;&#22823;&#22270;
+    #pz-shader.pz-shader.pz-fix-top
+    .pz-header-fix-space
+    .pz-wrapper
+      #datetime.pz-heading
+        h2
+          | &#26085;&#21382;&#25511;&#20214;
+          small pz-datetime
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              | &#26085;&#26399;&plus;&#26102;&#38388;
+              input.pz-form-text.pz-datetime(type='text', name='calendar')
+              br
+              br
+              | &#26085;&#26399;
+              input.pz-form-text.pz-date(type='text', name='calendar2')
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              p(style='padding-bottom:10px;')
+                | &#32473;
+                code input
+                | &#28155;&#21152;class
+                code pz-datetime
+                | &#23601;&#20250;&#33258;&#21160;&#21551;&#29992;&#26085;&#26399;&plus;&#26102;&#38388;&#36873;&#25321;&#22120;
+              p
+                | &#32473;
+                code input
+                | &#28155;&#21152;class
+                code pz-date
+                | &#23601;&#20250;&#33258;&#21160;&#21551;&#29992;&#26085;&#26399;&#36873;&#25321;&#22120;
+      #tooltip.pz-heading
+        h2
+          | &#21160;&#24863;&#25552;&#31034;
+          small pz-tooltip
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              img.pz-tooltip(src='assets/img/square04.jpg', title='这是一个动感光波 bibibibibi')
+              img.pz-tooltip(src='assets/img/square01.jpg', title='这个旗袍很 moe')
+              a.pz-tooltip(href='javascript:;', title='我是旗袍 yeah')
+                img(src='assets/img/square03.jpg')
+              br
+              br
+              p &#19968;&#27573;&#34920;&#21333;&#39564;&#35777;&#25552;&#31034;&colon;
+              .pz-tooltip
+                | &#22995;&#21517;&colon;
+                input.pz-form-text(type='text', name='a123', title='中英文都可以了啦 abc')
+                br
+                br
+                | &#23494;&#30721;&colon;
+                input.pz-form-password(type='password', name='p123', title='只能输入英文abc')
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              p
+                | &#32473;&#20219;&#24847;&#38750;div&#30340;&#20803;&#32032;&#35774;&#32622;class&#21253;&#21547;
+                code pz-tooltip
+                | &#65292;&#21363;&#21487;&#33258;&#21160;&#23454;&#29616;&#21160;&#24863;&#25552;&#31034;&#65292;&#25552;&#31034;&#30340;&#20869;&#23481;&#26159;&#36825;&#20010;&#20803;&#32032;&#30340;title
+              p &NonBreakingSpace;
+              p
+                | &#32473;&#19968;&#20010;div&#35774;&#32622;class&#21253;&#21547;
+                code pz-tooltip
+                | &#65292;&#21487;&#20197;&#35753;&#20803;&#32032;&#20869;&#37096;&#30340;input&colon;text&comma; input&colon;password&comma; textarea&comma; select&#33258;&#21160;&#38468;&#21152;&#21491;&#20391;&#21160;&#24863;&#25552;&#31034;&#65292;&#25552;&#31034;&#30340;&#20869;&#23481;&#26159;&#34920;&#21333;&#20803;&#32032;&#30340;title
+      #dialog.pz-heading
+        h2
+          | &#23545;&#35805;&#26694;
+          small pz-dialog
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              a.pz-btn.pz-dialog-trigger(href='javascript:;', rel='#open-me') &#28857;&#25105;&#25171;&#24320;&#23545;&#35805;&#26694;
+              a.pz-btn.pz-dialog-trigger(href='javascript:;', rel='#open-again') &#25171;&#24320;&#21478;&#19968;&#20010;&#23545;&#35805;&#26694;
+              #open-me.pz-dialog(style='display:none;')
+                h2 &#36825;&#26159;&#26631;&#39064; h2
+                p &#19968;&#27573;&#36755;&#20837;&#30340;&#20869;&#23481;asdfr
+                p
+                  | Lorem ipsum dolor sit amet&comma;
+                  strong consectetur adipisicing elit
+                  | &comma; sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&period; Ut enim ad minim veniam&comma; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat&period;
+                .pz-dialog-footer
+                  input.close.pz-btn(type='button', value='取消')
+                  input.close.pz-btn.pz-btn-reverse(type='button', value=' 确定 ')
+              #open-again.pz-dialog(style='display:none;')
+                h2 &#30830;&#23450;&#35201;&#21024;&#38500;&#25152;&#26377;&#20869;&#23481;&#21527;&#65311;
+                p &#36825;&#20010;&#25805;&#20316;&#26080;&#27861;&#22238;&#22797;&#65292;&#22914;&#26524;&#24744;&#19981;&#30830;&#35748;&#21487;&#20197;&#28857;&#20987;&#21462;&#28040;&#25353;&#38062;
+                .pz-dialog-footer
+                  input.close.pz-btn(type='button', value='取消')
+                  input.close.pz-btn.pz-btn-reverse(type='button', value=' 确定 ')
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              p
+                | &#32473;a&comma; button&comma; input&#31867;&#20803;&#32032;&#35774;&#32622;class&#21253;&#21547;
+                code pz-dialog-trigger
+                | &#65292;&#21363;&#21487;&#33258;&#21160;&#23454;&#29616;&#23545;&#35805;&#26694;&#21151;&#33021;&#65292;&#34987;&#21551;&#21160;&#30340;&#23545;&#35805;&#26694;&#26159;&#30001;trigger&#20803;&#32032;&#30340;
+                code rel&equals;&quot;&num;abc&quot;
+                | &#20915;&#23450;&#65292;&#36825;&#20363;&#20013;&#65292;&#28857;&#20987;trigger&#23558;&#33258;&#21160;&#24377;&#20986;
+                code div&num;abc
+                | &#36825;&#20010;&#23545;&#35805;&#26694;
+              p
+                | &#23545;&#35805;&#26694;&#30340;class&#24517;&#39035;&#21253;&#21547;
+                code pz-dialog
+              p &NonBreakingSpace;
+              p &#23545;&#35805;&#26694;&#20869;&#30340;&#24067;&#23616;&#23454;&#20363;&#22914;&#19979;&#65306;
+              div(style='height:200px; overflow:auto;')
+                pre.
+                  \n<div class="pz-dialog" id="open-me" style="display:none;">
+                      <h2>这是标题 h2</h2>
+                      <p>一段输入的内容asdfr</p>
+                      <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                      <div class="pz-dialog-footer">
+                          <input type="button" value="取消" class="close pz-btn" />
+                          <input type="button" value=" 确定 " class="close pz-btn pz-btn-reverse" />
+                      </div>
+                  </div>                  
+      #popshow.pz-heading
+        h2
+          | &#28857;&#20987;&#30475;&#22823;&#22270;
+          small pz-popshow
+      .pz-fluid-layout
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              a.pz-popshow-trigger(href='javascript:;', rel='#popshow-01')
+                img(src='assets/img/square04.jpg')
+              a.pz-popshow-trigger(href='javascript:;', rel='#popshow-02')
+                img(src='assets/img/square03.jpg')
+              #popshow-01.pz-popshow(style='display:none;')
+                img(src='assets/img/rectangle04-01.jpg')
+                .pz-popshow-detail
+                  h2 &#36825;&#26159;&#19968;&#20010;&#22823;&#26631;&#39064; h2
+                  p &#35814;&#32454;&#30340;&#25551;&#36848; The Gustavo House in Storkower Strasse&period;
+              #popshow-02.pz-popshow(style='display:none;')
+                img(src='assets/img/rectangle03-01.jpg')
+                .pz-popshow-detail
+                  p &#20877;&#26469;&#35814;&#32454;&#30340;&#25551;&#36848; The Gustavo House
+        .pz-fluid-dual
+          .pz-box
+            .pz-box-content
+              p
+                | &#22522;&#26412;&#19978;&#36319;
+                code pz-dialog
+                | &#23454;&#29616;&#24418;&#24335;&#19968;&#26679;&#12290;
+              p
+                | &#29992;
+                code &period;pz-popshow-trigger
+                | &#30340;
+                code rel&equals;&quot;&num;abc&quot;
+                | &#25511;&#21046;
+                code div&period;pz-dialog id&equals;&quot;abc&quot;
+              p &NonBreakingSpace;
+              p &#28857;&#20987;&#30475;&#22823;&#22270;&#30340;&#24067;&#23616;&#23454;&#20363;&#22914;&#19979;&#65306;
+              div(style='height:200px; overflow:auto;')
+                pre.
+                  \n<a href="javascript:;" class="pz-popshow-trigger" rel="#popshow-01"><img src="assets/img/square04.jpg" /></a>
+                  
+                  <div class="pz-popshow" id="popshow-01" style="display:none;">
+                      <img src="assets/img/rectangle04-01.jpg" />
+                      <div class="pz-popshow-detail">
+                          <h2>这是一个大标题 h2</h2>
+                          <p>详细的描述 The Gustavo House in Storkower Strasse.</p>
+                      </div>
+                  </div>                  
+    // end of pz-wrapper

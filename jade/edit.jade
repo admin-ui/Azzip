@@ -1,0 +1,89 @@
+doctype html
+html(lang='zh-CN')
+  head
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    title Azzip admin &#20856;&#22411;&#39029;&#38754;&colon;&#26032;&#24314;&sol;&#32534;&#36753;
+    link(href='assets/css/common.css?ver=1.01', type='text/css', rel='stylesheet')
+    link(href='assets/css/font.css?ver=1.01', type='text/css', rel='stylesheet')
+    link(href='assets/css/frame.css?ver=1.01', type='text/css', rel='stylesheet')
+    //if lt IE 8
+      script(type='text/javascript', src='assets/js/font.js')
+      script(defer='', type='text/javascript', src='assets/js/pngfix.js')
+    script(type='text/javascript', src='assets/js/jquery.js')
+    script(type='text/javascript', src='assets/js/jquery/calendar.js')
+    script(type='text/javascript', src='assets/js/jquery/tools.js')
+    script(type='text/javascript', src='assets/js/frame.js')
+    link(href='assets/css/vselect.css', type='text/css', rel='stylesheet')
+    script(src='assets/js/jquery/vselect.js', type='text/javascript')
+  body
+    #pz-header.pz-header.pz-fix-top
+      h1 Azzip UI - &#20856;&#22411;&#39029;&#38754;&colon;&#26032;&#24314;&sol;&#32534;&#36753;
+      a.pz-btn.pz-btn-success(href='edit.html') &#26032;&#24314;&#25968;&#25454;
+      a.pz-btn(href='list.html') &#36820;&#22238;&#21015;&#34920;
+    #pz-shader.pz-shader.pz-fix-top
+    .pz-header-fix-space
+    .pz-wrapper
+      .pz-box
+        .pz-box-header
+          | &#22635;&#34920;&#30340;&#21508;&#31181;&#27880;&#24847;&#20107;&#39033;
+        .pz-form
+          .pz-form-row
+            .pz-form-label &#21517;&#23383;
+            .pz-form-input
+              input.pz-form-text(type='text', name='name')
+              span.pz-form-hint &#36825;&#26159;&#25552;&#31034; pz-form-hint
+          .pz-form-row
+            .pz-form-label Pwd
+            .pz-form-input
+              input.pz-form-password(type='password', name='pwd')
+              i.pz-form-required.icon-pencil(title='必填')
+              span.pz-form-hint &#24517;&#22635;&#21834;
+          .pz-form-gap
+          .pz-form-row
+            .pz-form-label &#29366;&#24577;Status
+            .pz-form-input
+              select#status.pz-form-select(name='status')
+                option(value='') &#35831;&#36873;&#25321;
+                option(value='1') &#24320;&#21551;
+                option(value='2') &#26242;&#20572;
+                option(value='3') &#20013;&#25351;
+              i.pz-form-required.icon-pencil(title='必填')
+          .pz-form-row
+            .pz-form-label &#30003;&#35831;&#29702;&#30001;
+            .pz-form-input
+              textarea#reason.pz-form-textarea(name='reason')
+              i.pz-form-required.icon-pencil(title='必填')
+              span.pz-form-hint &#19981;&#23569;&#20110;800&#23383;
+          .pz-form-row
+            .pz-form-label &#24615;&#21035;
+            .pz-form-input
+              input#sex1.pz-form-radio(type='radio', name='sex')
+              label(for='sex1') &#30007;
+              input#sex2.pz-form-radio(type='radio', name='sex')
+              label(for='sex2') &#22899;
+              input#sex3.pz-form-radio(type='radio', name='sex')
+              label(for='sex3') &#27809;&#19969;&#19969;
+          .pz-form-row
+            .pz-form-label &#24615;&#21462;&#21521;
+            .pz-form-input
+              input#sexto1.pz-form-checkbox(type='checkbox', name='sexto')
+              label(for='sexto1') &#30007;
+              input#sexto2.pz-form-checkbox(type='checkbox', name='sexto')
+              label(for='sexto2') &#22899;
+              input#sexto3.pz-form-checkbox(type='checkbox', name='sexto')
+              label(for='sexto3') &#21160;&#29289;&quest;&excl;
+          .pz-form-row
+            .pz-form-label &#19978;&#20256;&#29031;&#29255;
+            .pz-form-input
+              input#upfile.pz-form-file(type='file', name='upfile')
+          .pz-form-gap
+          .pz-form-footer
+            input.pz-btn(type='button', value='取消')
+            input.pz-btn.pz-btn-danger(type='submit', value='提交数据')
+            input.pz-btn.pz-btn-submit(type='submit', value='先预览')
+      script(type='text/javascript')
+        $(function(){
+        $("#status").vselect();
+        })
+    // end of pz-wrapper
