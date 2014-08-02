@@ -25,6 +25,11 @@ required [node.js](http://nodejs.org/) & [bower](http://bower.io/) & [grunt](htt
  * [jQuery](http://jquery.com/)
  * [LESS](http://lesscss.org/)
 
+### Demo
+
+
+[http://admin-ui.github.io/Azzip/](http://admin-ui.github.io/Azzip/)
+
 ### Licensing
 
 Azzip Admin template is open-sourced software licensed under the [MIT License](http://opensource.org/licenses/MIT)
