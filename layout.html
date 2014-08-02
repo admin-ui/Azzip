@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Azzip admin layout</title>
+<link href="assets/css/common.css?ver=1.01" type="text/css" rel="stylesheet" />
+<link href="assets/css/font.css?ver=1.01" type="text/css" rel="stylesheet" />
+<link href="assets/css/frame.css?ver=1.01" type="text/css" rel="stylesheet" />
+<!--[if lt IE 8]>
+<script type="text/javascript" src="assets/js/font.js"></script>
+<script defer type="text/javascript" src="assets/js/pngfix.js"></script>
+<![endif]-->
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/jquery/calendar.js"></script>
+<script type="text/javascript" src="assets/js/jquery/tools.js"></script>
+<script type="text/javascript" src="assets/js/frame.js"></script>
+</head>
+<body>
+
+
+<div id="pz-header" class="pz-header pz-fix-top">
+    <h1>Azzip UI - 全局样式和布局</h1>
+    <a href="#globalStyle" rel="section-toggle" class="pz-btn">全局样式</a>
+    <a href="#layoutControl" rel="section-toggle" class="pz-btn">布局控制</a>
+    <a href="#fluidLayout" rel="section-toggle" class="pz-btn">液态预设栅格</a>
+    <a href="#fluidGrid" rel="section-toggle" class="pz-btn">液态12栅格</a>
+</div>
+<div id="pz-shader" class="pz-shader pz-fix-top"></div>
+<div class="pz-header-fix-space"></div>
+
+
+<div class="pz-wrapper">
+
+
+<div class="pz-heading" id="globalStyle">
+    <h2>全局样式
+        <small>doctype, 链接和默认字体</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-side">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <h3>链接和字体</h3>
+                <p>默认字体14px (在content类里面是12px)</p>
+                <p>字体行高20px</p>
+                <p>字体颜色值 #333333</p>
+                <p><a href="javascript:;">这是1个默认链接</a></p>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+    </div>
+    <div class="pz-fluid-main">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <h3>html doctype</h3>
+                <pre>
+&lt;!DOCTYPE html>
+&lt;html lang="zh-CN">
+&lt;head>
+&lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+......</pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pz-heading" id="layoutControl">
+    <h2>布局控制
+        <small>左、右浮动，清理浮动</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <p>系统内置了class<code>.pz-left</code>和<code>.pz-right</code>表示左浮动和右浮动</p>
+                <p>使用<code>div class="clear"</code>可以清理其上下容器的浮动</p>
+                <p>使用<code>div class="clearfix"</code>可以当前容器的浮动内容</p>
+                <p>使用<code>&lt;i class="i5">&lt;/i></code>产生5px的高度空间（同时清理上下容器浮动）</p>
+                <p>上例支持<code>i5</code>, <code>i10</code>, <code>i15</code>, <code>i20</code>, <code>i30</code>各种高度</p>
+            </div>
+        </div>
+    </div>
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <p>css <code>position:fixed</code>不支持ie6，Azzip UI提供了一个基于css的兼容方案</p>
+                <p>使用<code>div class="pz-fix-top"</code>让一个div容器固定浮动到页面顶部</p>
+                <p>使用<code>div class="pz-fix-bottom"</code>让一个div容器固定浮动到页面底部</p>
+                <p>使用<code>div class="pz-fix-left"</code>让一个div容器固定浮动到页面左侧</p>
+                <p>使用<code>div class="pz-fix-right"</code>让一个div容器固定浮动到页面右侧</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pz-heading" id="fluidLayout">
+    <h2>液态预设栅格 DEMO
+        <small>主侧栏、双栏、三栏、四栏</small>
+    </h2>
+</div>
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-main">
+        <div class="pz-box">div.pz-fluid-main</div>
+    </div>
+    <div class="pz-fluid-side">
+        <div class="pz-box">div.pz-fluid-side</div>
+    </div>
+    <div class="pz-fluid-side">
+        <div class="pz-box">div.pz-fluid-side</div>
+    </div>
+    <div class="pz-fluid-main">
+        <div class="pz-box">div.pz-fluid-main</div>
+    </div>
+    <div class="pz-fluid-dual">
+        <div class="pz-box">div.pz-fluid-dual</div>
+    </div>
+    <div class="pz-fluid-dual">
+        <div class="pz-box">div.pz-fluid-dual</div>
+    </div>
+    <div class="pz-fluid-triple">
+        <div class="pz-box">div.pz-fluid-triple</div>
+    </div>
+    <div class="pz-fluid-triple">
+        <div class="pz-box">div.pz-fluid-triple</div>
+    </div>
+    <div class="pz-fluid-triple">
+        <div class="pz-box">div.pz-fluid-triple</div>
+    </div>
+    <div class="pz-fluid-quad">
+        <div class="pz-box">div.pz-fluid-quad</div>
+    </div>
+    <div class="pz-fluid-quad">
+        <div class="pz-box">div.pz-fluid-quad</div>
+    </div>
+    <div class="pz-fluid-quad">
+        <div class="pz-box">div.pz-fluid-quad</div>
+    </div>
+    <div class="pz-fluid-quad">
+        <div class="pz-box">div.pz-fluid-quad</div>
+    </div>
+</div>
+<div class="pz-heading">
+    <h3>液态预设栅格 DEMO code</h3>
+</div>
+<div class="pz-box">
+    <div class="pz-box-content" style="height:360px; overflow:auto;">
+        <pre>
+&lt;div class="pz-fluid-layout">
+    &lt;div class="pz-fluid-main">
+        &lt;div class="pz-box">div.pz-fluid-main&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-fluid-side">
+        &lt;div class="pz-box">div.pz-fluid-side&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-fluid-side">
+        &lt;div class="pz-box">div.pz-fluid-side&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-fluid-main">
+        &lt;div class="pz-box">div.pz-fluid-main&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-fluid-dual">
+        &lt;div class="pz-box">div.pz-fluid-dual&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-fluid-dual">
+        &lt;div class="pz-box">div.pz-fluid-dual&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-fluid-triple">
+        &lt;div class="pz-box">div.pz-fluid-triple&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-fluid-triple">
+        &lt;div class="pz-box">div.pz-fluid-triple&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-fluid-triple">
+        &lt;div class="pz-box">div.pz-fluid-triple&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-fluid-quad">
+        &lt;div class="pz-box">div.pz-fluid-quad&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-fluid-quad">
+        &lt;div class="pz-box">div.pz-fluid-quad&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-fluid-quad">
+        &lt;div class="pz-box">div.pz-fluid-quad&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-fluid-quad">
+        &lt;div class="pz-box">div.pz-fluid-quad&lt;/div>
+    &lt;/div>
+&lt;/div></pre>
+    </div>
+</div>
+
+
+<div class="pz-heading" id="fluidGrid">
+    <h2>液态12栅格 DEMO
+        <small>12个等分液态栅格，兼容IE6</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-grid">
+    <div class="pz-grid1">
+        <div class="pz-box">1</div>
+    </div>
+    <div class="pz-grid1">
+        <div class="pz-box">1</div>
+    </div>
+    <div class="pz-grid1">
+        <div class="pz-box">1</div>
+    </div>
+    <div class="pz-grid1">
+        <div class="pz-box">1</div>
+    </div>
+    <div class="pz-grid1">
+        <div class="pz-box">1</div>
+    </div>
+    <div class="pz-grid1">
+        <div class="pz-box">1</div>
+    </div>
+    <div class="pz-grid1">
+        <div class="pz-box">1</div>
+    </div>
+    <div class="pz-grid1">
+        <div class="pz-box">1</div>
+    </div>
+    <div class="pz-grid1">
+        <div class="pz-box">1</div>
+    </div>
+    <div class="pz-grid1">
+        <div class="pz-box">1</div>
+    </div>
+    <div class="pz-grid1">
+        <div class="pz-box">1</div>
+    </div>
+    <div class="pz-grid1">
+        <div class="pz-box">1</div>
+    </div>
+</div>
+
+
+<div class="pz-fluid-grid">
+    <div class="pz-grid4">
+        <div class="pz-box">4</div>
+    </div>
+    <div class="pz-grid4">
+        <div class="pz-box">4</div>
+    </div>
+    <div class="pz-grid4">
+        <div class="pz-box">4</div>
+    </div>
+</div>
+
+
+<div class="pz-fluid-grid">
+    <div class="pz-grid4">
+        <div class="pz-box">4</div>
+    </div>
+    <div class="pz-grid8">
+        <div class="pz-box">8</div>
+    </div>
+</div>
+
+
+<div class="pz-fluid-grid">
+    <div class="pz-grid5">
+        <div class="pz-box">5</div>
+    </div>
+    <div class="pz-grid7">
+        <div class="pz-box">7</div>
+    </div>
+</div>
+
+
+<div class="pz-fluid-grid">
+    <div class="pz-grid6">
+        <div class="pz-box">6</div>
+    </div>
+    <div class="pz-grid6">
+        <div class="pz-box">6</div>
+    </div>
+</div>
+
+
+<div class="pz-fluid-grid">
+    <div class="pz-grid12">
+        <div class="pz-box">12</div>
+    </div>
+</div>
+
+
+<div class="pz-heading" id="fluidGrid">
+    <h3>液态12栅格 DEMO code</h3>
+</div>
+<div class="pz-box">
+    <div class="pz-box-content" style="height:360px; overflow:auto;">
+        <pre>
+&lt;div class="pz-fluid-grid">
+    &lt;div class="pz-grid1">
+        &lt;div class="pz-box">1&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-grid1">
+        &lt;div class="pz-box">1&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-grid1">
+        &lt;div class="pz-box">1&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-grid1">
+        &lt;div class="pz-box">1&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-grid1">
+        &lt;div class="pz-box">1&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-grid1">
+        &lt;div class="pz-box">1&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-grid1">
+        &lt;div class="pz-box">1&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-grid1">
+        &lt;div class="pz-box">1&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-grid1">
+        &lt;div class="pz-box">1&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-grid1">
+        &lt;div class="pz-box">1&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-grid1">
+        &lt;div class="pz-box">1&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-grid1">
+        &lt;div class="pz-box">1&lt;/div>
+    &lt;/div>
+&lt;/div>
+
+&lt;div class="pz-fluid-grid">
+    &lt;div class="pz-grid4">
+        &lt;div class="pz-box">4&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-grid4">
+        &lt;div class="pz-box">4&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-grid4">
+        &lt;div class="pz-box">4&lt;/div>
+    &lt;/div>
+&lt;/div>
+
+&lt;div class="pz-fluid-grid">
+    &lt;div class="pz-grid4">
+        &lt;div class="pz-box">4&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-grid8">
+        &lt;div class="pz-box">8&lt;/div>
+    &lt;/div>
+&lt;/div>
+
+&lt;div class="pz-fluid-grid">
+    &lt;div class="pz-grid5">
+        &lt;div class="pz-box">5&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-grid7">
+        &lt;div class="pz-box">7&lt;/div>
+    &lt;/div>
+&lt;/div>
+
+&lt;div class="pz-fluid-grid">
+    &lt;div class="pz-grid6">
+        &lt;div class="pz-box">6&lt;/div>
+    &lt;/div>
+    &lt;div class="pz-grid6">
+        &lt;div class="pz-box">6&lt;/div>
+    &lt;/div>
+&lt;/div>
+
+&lt;div class="pz-fluid-grid">
+    &lt;div class="pz-grid12">
+        &lt;div class="pz-box">12&lt;/div>
+    &lt;/div>
+&lt;/div></pre>
+    </div>
+</div>
+
+
+</div>
+<!-- end of pz-wrapper -->
+
+
+</body>
+</html>

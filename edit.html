@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Azzip admin 典型页面:新建/编辑</title>
+<link href="assets/css/common.css?ver=1.01" type="text/css" rel="stylesheet" />
+<link href="assets/css/font.css?ver=1.01" type="text/css" rel="stylesheet" />
+<link href="assets/css/frame.css?ver=1.01" type="text/css" rel="stylesheet" />
+<!--[if lt IE 8]>
+<script type="text/javascript" src="assets/js/font.js"></script>
+<script defer type="text/javascript" src="assets/js/pngfix.js"></script>
+<![endif]-->
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/jquery/calendar.js"></script>
+<script type="text/javascript" src="assets/js/jquery/tools.js"></script>
+<script type="text/javascript" src="assets/js/frame.js"></script>
+
+<link href="assets/css/vselect.css" type="text/css" rel="stylesheet" />
+<script src="assets/js/jquery/vselect.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+
+<div id="pz-header" class="pz-header pz-fix-top">
+    <h1>Azzip UI - 典型页面:新建/编辑</h1>
+    <a href="edit.html" class="pz-btn pz-btn-success">新建数据</a>
+    <a href="list.html" class="pz-btn">返回列表</a>
+</div>
+<div id="pz-shader" class="pz-shader pz-fix-top"></div>
+<div class="pz-header-fix-space"></div>
+
+
+<div class="pz-wrapper">
+
+
+<div class="pz-box">
+    <div class="pz-box-header">
+        填表的各种注意事项
+    </div>
+    <div class="pz-form">
+        <div class="pz-form-row">
+            <div class="pz-form-label">名字</div>
+            <div class="pz-form-input">
+                <input type="text" name="name" class="pz-form-text" />
+                <span class="pz-form-hint">这是提示 pz-form-hint</span>
+            </div>
+        </div>
+        <div class="pz-form-row">
+            <div class="pz-form-label">Pwd</div>
+            <div class="pz-form-input">
+                <input type="password" name="pwd" class="pz-form-password" />
+                <i class="pz-form-required icon-pencil" title="必填"></i>
+                <span class="pz-form-hint">必填啊</span>
+            </div>
+        </div>
+        <div class="pz-form-gap"></div>
+        <div class="pz-form-row">
+            <div class="pz-form-label">状态Status</div>
+            <div class="pz-form-input">
+                <select name="status" id="status" class="pz-form-select">
+                    <option value="">请选择</option>
+                    <option value="1">开启</option>
+                    <option value="2">暂停</option>
+                    <option value="3">中指</option>
+                </select>
+                <i class="pz-form-required icon-pencil" title="必填"></i>
+            </div>
+        </div>
+        <div class="pz-form-row">
+            <div class="pz-form-label">申请理由</div>
+            <div class="pz-form-input">
+                <textarea name="reason" id="reason" class="pz-form-textarea"></textarea>
+                <i class="pz-form-required icon-pencil" title="必填"></i>
+                <span class="pz-form-hint">不少于800字</span>
+            </div>
+        </div>
+        <div class="pz-form-row">
+            <div class="pz-form-label">性别</div>
+            <div class="pz-form-input">
+                <input type="radio" name="sex" id="sex1" class="pz-form-radio" 
+                /><label for="sex1">男</label>
+                <input type="radio" name="sex" id="sex2" class="pz-form-radio" 
+                /><label for="sex2">女</label>
+                <input type="radio" name="sex" id="sex3" class="pz-form-radio" 
+                /><label for="sex3">没丁丁</label>
+            </div>
+        </div>
+        <div class="pz-form-row">
+            <div class="pz-form-label">性取向</div>
+            <div class="pz-form-input">
+                <input type="checkbox" name="sexto" id="sexto1" class="pz-form-checkbox" 
+                /><label for="sexto1">男</label>
+                <input type="checkbox" name="sexto" id="sexto2" class="pz-form-checkbox" 
+                /><label for="sexto2">女</label>
+                <input type="checkbox" name="sexto" id="sexto3" class="pz-form-checkbox" 
+                /><label for="sexto3">动物?!</label>
+            </div>
+        </div>
+        <div class="pz-form-row">
+            <div class="pz-form-label">上传照片</div>
+            <div class="pz-form-input">
+                <input type="file" name="upfile" id="upfile" class="pz-form-file" />
+            </div>
+        </div>
+        <div class="pz-form-gap"></div>
+        <div class="pz-form-footer">
+            <input type="button" value="取消" class="pz-btn" />
+            <input type="submit" value="提交数据" class="pz-btn pz-btn-danger" />
+            <input type="submit" value="先预览" class="pz-btn pz-btn-submit" />
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+$(function(){
+    $("#status").vselect();
+})
+</script>
+
+
+</div>
+<!-- end of pz-wrapper -->
+
+
+</body>
+</html>

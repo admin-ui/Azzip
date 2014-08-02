@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Azzip admin js插件</title>
+<link href="assets/css/common.css?ver=1.01" type="text/css" rel="stylesheet" />
+<link href="assets/css/font.css?ver=1.01" type="text/css" rel="stylesheet" />
+<link href="assets/css/frame.css?ver=1.01" type="text/css" rel="stylesheet" />
+<!--[if lt IE 8]>
+<script type="text/javascript" src="assets/js/font.js"></script>
+<script defer type="text/javascript" src="assets/js/pngfix.js"></script>
+<![endif]-->
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/jquery/calendar.js"></script>
+<script type="text/javascript" src="assets/js/jquery/tools.js"></script>
+<script type="text/javascript" src="assets/js/frame.js"></script>
+</head>
+<body>
+
+
+<div id="pz-header" class="pz-header pz-fix-top">
+    <h1>Azzip UI - js插件</h1>
+    <a href="#datetime" rel="section-toggle" class="pz-btn">日历控件</a>
+    <a href="#tooltip" rel="section-toggle" class="pz-btn">动感提示</a>
+    <a href="#dialog" rel="section-toggle" class="pz-btn">对话框</a>
+    <a href="#popshow" rel="section-toggle" class="pz-btn">点击看大图</a>
+</div>
+<div id="pz-shader" class="pz-shader pz-fix-top"></div>
+<div class="pz-header-fix-space"></div>
+
+
+<div class="pz-wrapper">
+
+
+<div class="pz-heading" id="datetime">
+    <h2>日历控件
+        <small>pz-datetime</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                日期+时间 <input type="text" name="calendar" class="pz-form-text pz-datetime" />
+                <br /><br />
+                日期 <input type="text" name="calendar2" class="pz-form-text pz-date" />
+            </div>
+        </div>
+    </div>
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <p style="padding-bottom:10px;">给<code>input</code>添加class<code>pz-datetime</code>就会自动启用日期+时间选择器</p>
+                <p>给<code>input</code>添加class<code>pz-date</code>就会自动启用日期选择器</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pz-heading" id="tooltip">
+    <h2>动感提示
+        <small>pz-tooltip</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <img src="assets/img/square04.jpg" class="pz-tooltip" title="这是一个动感光波 bibibibibi" />
+                <img src="assets/img/square01.jpg" class="pz-tooltip" title="这个旗袍很 moe" />
+                <a href="javascript:;" class="pz-tooltip" title="我是旗袍 yeah"><img src="assets/img/square03.jpg" /></a>
+                
+                <br /><br /><p>一段表单验证提示:</p>
+                <div class="pz-tooltip">
+                    姓名: <input type="text" class="pz-form-text" name="a123" title="中英文都可以了啦 abc" />
+                    <br /><br />
+                    密码: <input type="password" class="pz-form-password" name="p123" title="只能输入英文abc" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <p>给任意非div的元素设置class包含<code>pz-tooltip</code>，即可自动实现动感提示，提示的内容是这个元素的title</p>
+                <p>&nbsp;</p>
+                <p>给一个div设置class包含<code>pz-tooltip</code>，可以让元素内部的input:text, input:password, textarea, select自动附加右侧动感提示，提示的内容是表单元素的title</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pz-heading" id="dialog">
+    <h2>对话框
+        <small>pz-dialog</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <a href="javascript:;" class="pz-btn pz-dialog-trigger" rel="#open-me">点我打开对话框</a>
+                &nbsp;
+                <a href="javascript:;" class="pz-btn pz-dialog-trigger" rel="#open-again">打开另一个对话框</a>
+                <div class="pz-dialog" id="open-me" style="display:none;">
+                    <h2>这是标题 h2</h2>
+                    <p>一段输入的内容asdfr</p>
+                    <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <div class="pz-dialog-footer">
+                        <input type="button" value="取消" class="close pz-btn" />
+                        <input type="button" value=" 确定 " class="close pz-btn pz-btn-reverse" />
+                    </div>
+                </div>
+                <div class="pz-dialog" id="open-again" style="display:none;">
+                    <h2>确定要删除所有内容吗？</h2>
+                    <p>这个操作无法回复，如果您不确认可以点击取消按钮</p>
+                    <div class="pz-dialog-footer">
+                        <input type="button" value="取消" class="close pz-btn" />
+                        <input type="button" value=" 确定 " class="close pz-btn pz-btn-reverse" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <p>给a, button, input类元素设置class包含<code>pz-dialog-trigger</code>，即可自动实现对话框功能，被启动的对话框是由trigger元素的<code>rel="#abc"</code>决定，这例中，点击trigger将自动弹出<code>div#abc</code>这个对话框</p>
+                <p>对话框的class必须包含<code>pz-dialog</code></p>
+                <p>&nbsp;</p>
+                <p>对话框内的布局实例如下：</p>
+                <div style="height:200px; overflow:auto;">
+                    <pre>
+&lt;div class="pz-dialog" id="open-me" style="display:none;">
+    &lt;h2>这是标题 h2&lt;/h2>
+    &lt;p>一段输入的内容asdfr&lt;/p>
+    &lt;p>Lorem ipsum dolor sit amet, &lt;strong>consectetur adipisicing elit&lt;/strong>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. &lt;/p>
+    &lt;div class="pz-dialog-footer">
+        &lt;input type="button" value="取消" class="close pz-btn" />
+        &lt;input type="button" value=" 确定 " class="close pz-btn pz-btn-reverse" />
+    &lt;/div>
+&lt;/div></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="pz-heading" id="popshow">
+    <h2>点击看大图
+        <small>pz-popshow</small>
+    </h2>
+</div>
+
+
+<div class="pz-fluid-layout">
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <a href="javascript:;" class="pz-popshow-trigger" rel="#popshow-01"><img src="assets/img/square04.jpg" /></a>
+                <a href="javascript:;" class="pz-popshow-trigger" rel="#popshow-02"><img src="assets/img/square03.jpg" /></a>
+
+                <div class="pz-popshow" id="popshow-01" style="display:none;">
+                    <img src="assets/img/rectangle04-01.jpg" />
+                    <div class="pz-popshow-detail">
+                        <h2>这是一个大标题 h2</h2>
+                        <p>详细的描述 The Gustavo House in Storkower Strasse.</p>
+                    </div>
+                </div>
+
+                <div class="pz-popshow" id="popshow-02" style="display:none;">
+                    <img src="assets/img/rectangle03-01.jpg" />
+                    <div class="pz-popshow-detail">
+                        <p>再来详细的描述 The Gustavo House</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pz-fluid-dual">
+        <div class="pz-box">
+            <div class="pz-box-content">
+                <p>基本上跟<code>pz-dialog</code>实现形式一样。</p>
+                <p>用<code>.pz-popshow-trigger</code>的<code>rel="#abc"</code>控制<code>div.pz-dialog id="abc"</code></p>
+                <p>&nbsp;</p>
+                <p>点击看大图的布局实例如下：</p>
+                <div style="height:200px; overflow:auto;">
+                    <pre>
+&lt;a href="javascript:;" class="pz-popshow-trigger" rel="#popshow-01">&lt;img src="assets/img/square04.jpg" />&lt;/a>
+
+&lt;div class="pz-popshow" id="popshow-01" style="display:none;">
+    &lt;img src="assets/img/rectangle04-01.jpg" />
+    &lt;div class="pz-popshow-detail">
+        &lt;h2>这是一个大标题 h2&lt;/h2>
+        &lt;p>详细的描述 The Gustavo House in Storkower Strasse.&lt;/p>
+    &lt;/div>
+&lt;/div></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<!-- end of pz-wrapper -->
+
+
+</body>
+</html>
